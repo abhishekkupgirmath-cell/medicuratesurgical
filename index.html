@@ -14,7 +14,7 @@
             scroll-behavior: smooth;
         }
 
-        /* NAVBAR */
+        /* NAV */
         nav {
             width: 100%;
             padding: 20px 50px;
@@ -24,7 +24,7 @@
             position: fixed;
             top: 0;
             background: rgba(255,255,255,0.9);
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(12px);
             z-index: 1000;
             border-bottom: 1px solid #eee;
         }
@@ -45,24 +45,23 @@
             color: #0e6ba8;
         }
 
-        /* HERO SECTION */
+        /* HERO */
         .hero {
             padding: 180px 50px 130px;
-            background: #f5f9ff;
+            background: #0b0e14;
+            color: white;
             text-align: center;
         }
 
         .hero h1 {
             font-size: 50px;
             font-weight: 800;
-            margin-bottom: 15px;
-            color: #0e2a47;
         }
 
         .hero p {
             font-size: 20px;
-            margin-bottom: 40px;
-            color: #444;
+            margin-top: 15px;
+            opacity: 0.85;
         }
 
         .btn-primary {
@@ -73,13 +72,15 @@
             font-weight: 600;
             border-radius: 8px;
             font-size: 17px;
+            margin-top: 30px;
+            display: inline-block;
         }
 
         .btn-primary:hover {
             background: #094d78;
         }
 
-        /* SECTION WRAPPER */
+        /* SECTION */
         .section {
             padding: 110px 50px;
         }
@@ -105,14 +106,14 @@
         }
 
         .dark h2 {
-            color: #fff;
+            color: white;
         }
 
         .dark p {
-            color: #ddd;
+            color: #ccc;
         }
 
-        /* PRODUCT SHOWCASE */
+        /* CARDS */
         .cards {
             display: flex;
             gap: 40px;
@@ -123,32 +124,29 @@
 
         .card {
             width: 330px;
-            background: #fff;
-            color: #111;
+            background: #1a1f27;
+            color: white;
             border-radius: 15px;
             padding: 25px;
             text-align: center;
-            box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+            box-shadow: 0px 6px 20px rgba(0,0,0,0.3);
         }
 
         .card img {
             width: 100%;
-            border-radius: 8px;
+            border-radius: 10px;
+            box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
         }
 
         .card h3 {
-            margin-top: 18px;
             font-size: 24px;
+            margin-top: 20px;
         }
 
         .card p {
-            font-size: 16px;
-            color: #555;
-        }
-
-        .card a {
-            margin-top: 20px;
-            display: inline-block;
+            font-size: 15px;
+            margin-top: 10px;
+            color: #ddd;
         }
 
         /* FOOTER */
@@ -158,22 +156,12 @@
             text-align: center;
             color: #ccc;
         }
-
-        footer h3 {
-            color: white;
-        }
-
-        footer p {
-            font-size: 16px;
-            margin: 8px 0;
-        }
-
     </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<!-- NAV -->
 <nav>
     <img src="WhatsApp Image 2025-09-13 at 17.47.53.jpeg" alt="Logo">
     <div>
@@ -186,60 +174,57 @@
 <!-- HERO -->
 <section class="hero">
     <h1>Innovating Medical Education</h1>
-    <p>Cutting-edge VR Anatomy & Simulation Solutions for Institutions and Training Centers.</p>
-    <a class="btn-primary" href="vr.html">Explore VR Anatomy</a>
+    <p>Advanced VR Anatomy & Simulation Solutions for Modern Healthcare Training.</p>
+    <a href="vr.html" class="btn-primary">Explore VR Anatomy</a>
 </section>
 
-<!-- ABOUT SECTION -->
+<!-- ABOUT -->
 <section class="section">
     <h2>About MediCurate Surgical</h2>
     <p>
-        MediCurate Surgical is dedicated to transforming the future of medical learning. 
-        Through advanced VR-based anatomy platforms and next-generation simulation manikins, 
-        we help educational institutes and hospitals deliver immersive, accurate, and high-impact training experiences.
+        MediCurate Surgical develops advanced virtual anatomy platforms and high-fidelity
+        simulation manikins for medical institutions. Our goal is to modernize clinical training 
+        through immersive, accurate and scalable technology.
     </p>
 </section>
 
-<!-- VR SECTION (DARK) -->
+<!-- VR FEATURE SECTION -->
 <section class="section dark">
-    <h2>VR Anatomy Immersion</h2>
-    <p>Interactive, precise and institution-ready VR platform built for students, educators and surgeons.</p>
+    <h2>VR Anatomy — Powered by Meta Quest 3s</h2>
+    <p>Optimized for standalone VR learning with high-resolution visuals and seamless navigation.</p>
 
     <div class="cards">
         <div class="card">
-            <img src="WhatsApp Image 2025-09-13 at 17.47.53.jpeg" />
-            <h3>VR Anatomy</h3>
-            <p>Full 3D exploration of organs, systems, structures & microanatomy.</p>
-            <a class="btn-primary" href="vr.html">View Details</a>
+            <img src="quest3.jpeg" alt="Quest 3s VR Headset">
+            <h3>Meta Quest 3s</h3>
+            <p>Branded VR experience for classrooms, labs & surgical training.</p>
+            <a href="vr.html" class="btn-primary">View Details</a>
         </div>
     </div>
 </section>
 
-<!-- MANIKINS SECTION -->
+<!-- MANIKINS -->
 <section class="section">
     <h2>Smart Medical Manikins</h2>
     <p>
-        High-fidelity simulation manikins designed for medical colleges and nursing institutions. 
-        Train students efficiently with realistic responses, modular components and advanced monitoring.
+        Our simulation manikins provide realistic bodily responses and are engineered
+        to withstand extensive institutional training use.
     </p>
 
     <div class="cards">
-        <div class="card">
-            <img src="WhatsApp Image 2025-09-13 at 17.47.53.jpeg" />
+        <div class="card" style="background:#fff; color:#111; box-shadow:0 6px 20px rgba(0,0,0,0.1);">
+            <img src="WhatsApp Image 2025-09-13 at 17.47.53.jpeg" alt="Manikin">
             <h3>Simulation Manikins</h3>
-            <p>Durable, realistic and curriculum-ready for training labs.</p>
-            <a class="btn-primary" href="manikins.html">View Manikins</a>
+            <p>Durable, responsive and curriculum-ready models for all skill levels.</p>
+            <a href="manikins.html" class="btn-primary">View Manikins</a>
         </div>
     </div>
-
 </section>
 
 <!-- FOOTER -->
 <footer>
-    <h3>MediCurate Surgical</h3>
+    <p>MediCurate Surgical © 2025</p>
     <p>Email: medicuratesurgical@gmail.com</p>
-    <p>India</p>
-    <p>© 2025 MediCurate Surgical. All rights reserved.</p>
 </footer>
 
 </body>
