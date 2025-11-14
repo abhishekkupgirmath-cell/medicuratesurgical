@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VR Anatomy – MediCurate Surgical</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: #ffffff;
+            color: #111;
+            scroll-behavior: smooth;
+        }
+
+        /* NAVBAR */
+        nav {
+            width: 100%;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            background: rgba(255,255,255,0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid #eee;
+        }
+
+        nav img {
+            height: 45px;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #222;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #0e6ba8;
+        }
+
+        /* HERO */
+        .hero {
+            padding: 180px 50px 140px;
+            background: linear-gradient(135deg, #0b0e14, #111720);
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            opacity: 0.85;
+        }
+
+        /* MAIN SECTION */
+        .section {
+            padding: 110px 50px;
+        }
+
+        .section h2 {
+            font-size: 38px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: #0e2a47;
+        }
+
+        .section p {
+            font-size: 19px;
+            width: 75%;
+            max-width: 900px;
+            line-height: 1.6;
+        }
+
+        /* DARK SECTION */
+        .dark {
+            background: #0b0e14;
+            color: white;
+        }
+
+        .dark h2 {
+            color: #fff;
+        }
+
+        .dark p {
+            color: #ddd;
+        }
+
+        /* FEATURES GRID */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .feature-box {
+            padding: 25px;
+            background: white;
+            border-radius: 15px;
+            text-align: left;
+            color: #111;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+
+        .feature-box h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #0e2a47;
+        }
+
+        /* VR IMAGE SHOWCASE */
+        .vr-showcase {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .vr-showcase img {
+            width: 340px;
+            border-radius: 18px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+        }
+
+        /* COMPARISON TABLE */
+        table {
+            width: 100%;
+            max-width: 1000px;
+            border-collapse: collapse;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 18px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        th {
+            background: #0e6ba8;
+            color: white;
+            font-size: 18px;
+        }
+
+        .btn-primary {
+            background: #0e6ba8;
+            padding: 15px 32px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
+            font-size: 17px;
+            display: inline-block;
+            margin-top: 30px;
+        }
+
+        .btn-primary:hover {
+            background: #094d78;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 60px;
+            background: #0b0e14;
+            text-align: center;
+            color: #ccc;
+        }
+        footer h3 {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <img src="WhatsApp Image 2025-09-13 at 17.47.53.jpeg" alt="Logo">
+    <div>
+        <a href="index.html">Home</a>
+        <a href="vr.html">VR Anatomy</a>
+        <a href="manikins.html">Manikins</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>VR Anatomy</h1>
+    <p>Immersive, Accurate and Institution-Ready Medical VR Platform</p>
+</section>
+
+<!-- ABOUT VR -->
+<section class="section">
+    <h2>Transform Medical Learning with VR</h2>
+    <p>
+        Our VR-based anatomy platform enables students and surgeons to visualize human structures 
+        in real-time 3D. Built with precision and crafted for institutions, it replaces outdated 
+        cadaver limitations and offers unlimited repeatable training experiences.
+    </p>
+</section>
+
+<!-- FEATURES -->
+<section class="section dark">
+    <h2>Core Features</h2>
+    <div class="features">
+        <div class="feature-box">
+            <h3>3D Anatomy Exploration</h3>
+            <p>View organs, systems, layers, and microstructures with unmatched clarity.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Interactive Controls</h3>
+            <p>Grab, rotate, dissect and isolate anatomical structures intuitively.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Institution-Friendly Setup</h3>
+            <p>Works with standalone headsets—no PC or heavy setup required.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Classroom Monitoring</h3>
+            <p>Teachers can view, supervise and guide student sessions in real time.</p>
+        </div>
+    </div>
+</section>
+
+<!-- VR SHOWCASE (BRANDED HEADSET IMAGE) -->
+<section class="section">
+    <h2>VR Headset with Branding</h2>
+    <p>Your custom-branded device reinforces a premium academic presence.</p>
+
+    <div class="vr-showcase">
+        <img src="WhatsApp Image 2025-09-13 at 17.47.53.jpeg" alt="Branded VR">
+    </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="section dark">
+    <h2>Headset Compatibility</h2>
+    <p>Our VR Anatomy software works seamlessly across the latest Meta VR devices.</p>
+
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>Meta Quest 3</th>
+            <th>Meta Quest 3s</th>
+            <th>Meta Quest Pro</th>
+        </tr>
+        <tr>
+            <td>Resolution</td>
+            <td>2064 × 2208 per eye</td>
+            <td>1832 × 1920 per eye</td>
+            <td>1800 × 1920 per eye</td>
+        </tr>
+        <tr>
+            <td>Processor</td>
+            <td>Snapdragon XR2 Gen 2</td>
+            <td>Snapdragon XR2 Gen 1</td>
+            <td>Snapdragon XR2+</td>
+        </tr>
+        <tr>
+            <td>Price Range</td>
+            <td>₹44,000 – ₹48,000</td>
+            <td>₹32,000 – ₹36,000</td>
+            <td>₹72,000 – ₹92,000</td>
+        </tr>
+        <tr>
+            <td>Tracking</td>
+            <td>Inside-Out 6DoF</td>
+            <td>Inside-Out 6DoF</td>
+            <td>Inside-Out 6DoF</td>
+        </tr>
+        <tr>
+            <td>Recommended For</td>
+            <td>Medical Colleges</td>
+            <td>Nursing Colleges</td>
+            <td>Advanced Simulation</td>
+        </tr>
+    </table>
+
+    <div style="text-align:center;">
+        <a class="btn-primary" href="mailto:medicuratesurgical@gmail.com">Request Demo</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h3>MediCurate Surgical</h3>
+    <p>Email: medicuratesurgical@gmail.com</p>
+    <p>India</p>
+    <p>© 2025 MediCurate Surgical. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
