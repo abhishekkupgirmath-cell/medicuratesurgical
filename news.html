@@ -1,0 +1,543 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+
+<head>
+  <meta charset="utf-8">
+  <title>Virtual Medicine</title>
+
+  <meta name="description"
+    content="Transforming healthcare education through advanced VR/AR solutions. Explore interactive human anatomy, VR DICOM visualization, and realistic medical simulations for professionals and students.">
+  <meta name="keywords"
+    content="VR, AR, MR, XR, Mixed Reality, Body, Human, Anaromy, Virtual Reality, Human Anatomy VR, DICOM, CT, MRI, Medical Education, Healthcare Training, Interactive Anatomy, VR for Healthcare">
+  <meta name="author" content="Design: Michal Tkáč, Development: Ondrej Malota">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Virtual Medicine – The Future of Healthcare Education">
+  <meta property="og:description"
+    content="Leading innovation in healthcare education through VR/AR technology – Explore interactive human anatomy, DICOM visualization, and realistic medical simulations for professionals and students.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://medicinevirtual.com">
+  <meta property="og:image" content="https://medicinevirtual.com/img/SEO-min.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Virtual Medicine – The Future of Healthcare Education">
+  <meta name="twitter:description"
+    content="Leading innovation in healthcare education through VR/AR technology – Explore interactive human anatomy, DICOM visualization, and realistic medical simulations for professionals and students.">
+  <meta name="twitter:image" content="https://medicinevirtual.com/img/SEO-min.png">
+  <meta name="twitter:url" content="https://medicinevirtual.com">
+
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet"> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap"
+    onload="this.onload=null;this.rel='stylesheet'">
+
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap">
+  </noscript>
+
+  <!-- <link rel="stylesheet" href="/assets/css/normalize.css"> -->
+  <link rel="stylesheet" href="/assets/css/main.min.css?v=2.5">
+
+  <meta name="theme-color" content="#FFFFFF">
+</head>
+
+<body style="padding-top: 0;">
+
+  <div class="bg_blur">
+  </div>
+
+  <header>
+    <div class="burger_menu_bg">
+      <ul>
+
+        <li class="mobile-dropdown">
+          <span class="mobile-dropbtn" onclick="toggleMenu('products-submenu')">Products <span
+              class="arrow arrow-down"></span></span>
+          <ul class="mobile-dropdown-bg" id="products-submenu">
+            <div class="mobile-dropdown-content">
+              <div class="mobile-dropdown-content-bg">
+                <li class=""><a href="institution.html">Institution</a></li>
+                <li class=""><a href="professional.html">Professional</a></li>
+                <li class=""><a href="personal.html">Personal</a></li>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li class="mobile-dropdown">
+          <span class="mobile-dropbtn" onclick="toggleMenu('store-submenu')">Store <span
+              class="arrow arrow-down"></span></span>
+          <ul class="mobile-dropdown-bg" id="store-submenu">
+            <div class="mobile-dropdown-content">
+              <div class="mobile-dropdown-content-bg">
+                <li class=""><a href="http://portal.medicinevirtual.com/store" target="_blank">Buy Apps</a></li>
+                <li class=""><a href="functions.html?tab=downloads">Download Apps</a></li>
+                <li class=""><a href="functions.html?tab=functions">All Functions</a></li>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li class=""><a href="news.html">News</a></li>
+        <li class=""><a href="contact.html">About Us</a></li>
+        <li class=""><a href="faq.html">Help</a></li>
+      </ul>
+      <!-- <div class="multilanguage-burger">
+        <img src="/img/svk-flag.png" onclick="changeLanguage('sk');">
+        <img src="/img/uk-flag.png" style="opacity: 1; cursor: default">
+      </div> -->
+      <button class="try" onclick="location.href='contact-form.php';" style="border-radius: 20px;">CONTACT US</button>
+      <div class="burger_social_bar">
+        <img src="/img/social-facebook.svg" alt="FACEBOOK" class="social_ico"
+          onclick="window.open('https://www.facebook.com/VRMedicine/')" />
+        <img src="/img/social-instagram.svg" alt="INSTAGRAM" class="social_ico"
+          onclick="window.open('https://www.instagram.com/virtual_medicine/?hl=en')" />
+        <img src="/img/social-linkedin.svg" alt="LINKEDIN" class="social_ico"
+          onclick="window.open('https://www.linkedin.com/company/virtual-medicine-vr-ar')" />
+        <img src="/img/social-youtube.svg" alt="YOUTUBE" class="social_ico"
+          onclick="window.open('https://www.youtube.com/channel/UChvqcOhNLxxWBc0FACQeXHg')" />
+      </div>
+    </div>
+    <div class="nav_container nav_burger_container">
+      <nav>
+        <span class="nav_logo" onclick="location.href='/index.html';">
+          <img src="/img/nav-logo.png" alt="VIRTUAL MEDICINE" style="padding-left: 10px;" />
+        </span>
+        <!-- burger navbar -->
+        <div class="burger_navbar_container">
+          <div class="burger_navbar_item"></div>
+        </div>
+
+        <!-- burger navbar end -->
+        <ul>
+          <li class="nav_item dropdown">
+            <span class="dropbtn" onclick="location.href='institution.html';">Products <span
+                class="arrow-menu"></span></span>
+            <ul class="dropdown-bg">
+              <div class="dropdown-content">
+                <div class="dropdown-content-bg">
+                  <li class="nav_item_dropdown"><a href="/institution.html">Institution</a></li>
+                  <li class="nav_item_dropdown"><a href="/professional.html">Professional</a></li>
+                  <li class="nav_item_dropdown"><a href="/personal.html">Personal</a></li>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="nav_item dropdown">
+            <span class="dropbtn" onclick="window.open('http://portal.medicinevirtual.com/store', '_blank')">Store <span
+                class="arrow-menu"></span></span>
+            <ul class="dropdown-bg">
+              <div class="dropdown-content">
+                <div class="dropdown-content-bg">
+                  <li class="nav_item_dropdown"><a href="http://portal.medicinevirtual.com/store" target="_blank">Buy
+                      Apps</a></li>
+                  <li class="nav_item_dropdown"><a href="/functions.html?tab=downloads">Download Apps</a></li>
+                  <li class="nav_item_dropdown"><a href="/functions.html?tab=functions">All Functions</a></li>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="nav_item"><a href="/news.html">News</a></li>
+          <li class="nav_item"><a href="/faq.html">Help</a></li>
+          <li class="nav_item"><a href="/contact.html">About Us</a></li>
+        </ul>
+        <button class="nav_item_button try" onclick="location.href='contact-form.php';">CONTACT US</button>
+        <!-- <div class="multilanguage responsive_hidden">
+          <img src="/img/svk-flag.png" onclick="location.href='sk/index.html';">
+          <img src="/img/uk-flag.png" style="opacity: 1; cursor: default">
+        </div> -->
+      </nav>
+    </div>
+  </header>
+  <div class="news news-list">
+    <div class="container">
+      <h1>News</h1>
+
+      <a href="/news/virtual-medicine-releases-a-new-title-animal-anatomy-vr">
+        <div class="post">
+          <div class="image-wrapper">
+            <img src="https://news.medicinevirtual.com/wp-content/uploads/2025/11/Master-Image-16x9-Comp-scaled.png"
+              alt="Virtual Medicine Releases a New Title: Animal Anatomy VR">
+          </div>
+          <div class="text-content">
+            <div class="date">November 11, 2025</div>
+            <h3>Virtual Medicine Releases a New Title: Animal Anatomy VR</h3>
+            <div class="excerpt">
+              <p>We are proud to announce the release of our new Title: Animal Anatomy VR!</p>
+              <p>It’s the most immersive way to explore Animal Anatomy in 3D, blending Virtual, Mixed, and Augmented
+                Reality into one interactive experience.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a
+        href="/news/espns-analysts-explains-the-anatomy-of-a-hamstring-injury-using-human-anatomy-vr-%25f0%259f%258f%2588">
+        <div class="post">
+          <div class="image-wrapper">
+            <img
+              src="https://news.medicinevirtual.com/wp-content/uploads/2025/11/Stephania-Bell-takes-you-inside-the-anatomy-of-a-hamstring-injury.00_00_53_03.Still001.jpg"
+              alt="ESPN Analyst explains the Anatomy of a Hamstring Injury using Human Anatomy VR">
+          </div>
+          <div class="text-content">
+            <div class="date">November 5, 2025</div>
+            <h3>ESPN Analyst explains the Anatomy of a Hamstring Injury using Human Anatomy VR</h3>
+            <div class="excerpt">
+              <p>We’re excited to share that in a new video segment, ESPN&#8217;s NFL Analyst Stephania Bell takes an
+                inside look at the Anatomy of a Hamstring Injury using Human Anatomy VR.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a
+        href="/news/european-journal-of-stem-education-publishes-study-on-how-future-teachers-learn-through-human-anatomy-vr">
+        <div class="post">
+          <div class="image-wrapper">
+            <img src="https://news.medicinevirtual.com/wp-content/uploads/2025/10/upscalemedia-transformed-1-scaled.png"
+              alt="European Journal of STEM Education Publishes Study on How Future Teachers Learn Through Human Anatomy VR">
+          </div>
+          <div class="text-content">
+            <div class="date">October 27, 2025</div>
+            <h3>European Journal of STEM Education Publishes Study on How Future Teachers Learn Through Human Anatomy VR
+            </h3>
+            <div class="excerpt">
+              <p>A recent study published in the European Journal of STEM Education reveals how pre-service life-science
+                teachers used Human Anatomy VR to deepen their understanding of anatomy and develop modern,
+                student-centered teaching approaches.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="/news/joe-burrows-turf-toe-injury-explained-on-espn-with-human-anatomy-vr">
+        <div class="post">
+          <div class="image-wrapper">
+            <img src="https://news.medicinevirtual.com/wp-content/uploads/2025/09/ESPN-Thumbnail.jpg"
+              alt="Joe Burrow’s Turf Toe Injury Explained on ESPN with Human Anatomy VR">
+          </div>
+          <div class="text-content">
+            <div class="date">September 18, 2025</div>
+            <h3>Joe Burrow’s Turf Toe Injury Explained on ESPN with Human Anatomy VR</h3>
+            <div class="excerpt">
+              <p>ESPN features Human Anatomy VR to explain Joe Burrow’s turf toe injury, bringing sports medicine and
+                innovation to millions of NFL fans.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="/news/afyonkarahisar-health-sciences-university-research-supports-human-anatomy-vr-in-anatomy-education">
+        <div class="post">
+          <div class="image-wrapper">
+            <img
+              src="https://news.medicinevirtual.com/wp-content/uploads/2025/09/ChatGPT-Image-Sep-16-2025-02_40_55-PM.png"
+              alt="Anatomical Science International Study Supports Human Anatomy VR in Anatomy Education">
+          </div>
+          <div class="text-content">
+            <div class="date">September 5, 2025</div>
+            <h3>Anatomical Science International Study Supports Human Anatomy VR in Anatomy Education</h3>
+            <div class="excerpt">
+              <p>A peer-reviewed study in Anatomical Science International adds compelling evidence to what many
+                educators already believe: virtual reality is transforming anatomy education.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="/news/back-to-school-update-is-here">
+        <div class="post">
+          <div class="image-wrapper">
+            <img src="https://news.medicinevirtual.com/wp-content/uploads/2025/08/Cover-Landscape-3.png"
+              alt="Back to School Update is here!">
+          </div>
+          <div class="text-content">
+            <div class="date">August 4, 2025</div>
+            <h3>Back to School Update is here!</h3>
+            <div class="excerpt">
+              <p>Get classroom-ready with the Back to School Update 2025 for Human Anatomy VR. Now featuring PACS
+                integration, Quick Save, improved search, and streamlined licensing—plus performance and stability
+                upgrades for a smoother learning experience. Perfect for educators and students starting the new
+                academic year.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="/news/cal-showcases-human-anatomy-vr-at-university-of-the-district-of-columbia-steaam-camp">
+        <div class="post">
+          <div class="image-wrapper">
+            <img src="https://news.medicinevirtual.com/wp-content/uploads/2025/07/udc-logo-1.png"
+              alt="CAL Showcases Human Anatomy VR at University of the District of Columbia STEAAM Camp">
+          </div>
+          <div class="text-content">
+            <div class="date">July 1, 2025</div>
+            <h3>CAL Showcases Human Anatomy VR at University of the District of Columbia STEAAM Camp</h3>
+            <div class="excerpt">
+              <p>In June, the University of the District of Columbia&#8217;s STEAAM Camp introduced middle and high
+                school students to Human Anatomy VR, offering an immersive session to spark curiosity and teach science
+                through technology.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="/news/the-impact-of-extended-reality-at-the-university-of-nevada">
+        <div class="post">
+          <div class="image-wrapper">
+            <img
+              src="https://news.medicinevirtual.com/wp-content/uploads/2025/07/University-of-Nevada-Las-Vegas-Logo-before-2010s-scaled.png"
+              alt="The Impact of Extended Reality at the University of Nevada">
+          </div>
+          <div class="text-content">
+            <div class="date">June 20, 2025</div>
+            <h3>The Impact of Extended Reality at the University of Nevada</h3>
+            <div class="excerpt">
+              <p>The recent study conducted by the University of Nevada, Las Vegas, highlights the significant role that
+                Extended Reality (XR) technologies are playing in reshaping higher education, particularly in anatomy
+                education.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="/news/human-anatomy-vr-spring-update-is-here">
+        <div class="post">
+          <div class="image-wrapper">
+            <img
+              src="https://news.medicinevirtual.com/wp-content/uploads/2025/06/499318750_1884548505664564_1842830843627180027_n-1.jpg"
+              alt="Human Anatomy VR Spring Update is here!">
+          </div>
+          <div class="text-content">
+            <div class="date">May 19, 2025</div>
+            <h3>Human Anatomy VR Spring Update is here!</h3>
+            <div class="excerpt">
+              <p>Spring brings a new update to Human Anatomy VR for Institutions. Take a look at the latest changes.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="/news/virtual-medicine-showcases-innovations-at-medexpo-africa-2025-in-nairobi">
+        <div class="post">
+          <div class="image-wrapper">
+            <img
+              src="https://news.medicinevirtual.com/wp-content/uploads/2025/05/497944517_1010081561235967_5261640980747658123_n-1.png"
+              alt="Virtual Medicine Showcases Innovations at MedExpo Africa 2025 in Nairobi">
+          </div>
+          <div class="text-content">
+            <div class="date">May 17, 2025</div>
+            <h3>Virtual Medicine Showcases Innovations at MedExpo Africa 2025 in Nairobi</h3>
+            <div class="excerpt">
+              <p>Virtual Medicine was honored to participate in MedExpo Africa 2025, held from May 14–16 at Nairobi’s
+                Sarit Expo Centre, in collaboration with the Slovak Health Innovation Hub. </p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="/news/kyung-hee-university-researchers-evaluate-human-anatomy-vr-for-medical-learning-in-a-new-study">
+        <div class="post">
+          <div class="image-wrapper">
+            <img src="https://news.medicinevirtual.com/wp-content/uploads/2025/08/imgSub53110_01.jpg"
+              alt="Kyung Hee University Researchers Evaluate Human Anatomy VR for Medical Learning in a new study">
+          </div>
+          <div class="text-content">
+            <div class="date">January 3, 2025</div>
+            <h3>Kyung Hee University Researchers Evaluate Human Anatomy VR for Medical Learning in a new study</h3>
+            <div class="excerpt">
+              <p>A recent study in Scientific Reports analyzes anatomy-focused VR applications in education,
+                highlighting Human Anatomy VR for its realistic 3D models and interactive features. The study emphasizes
+                the platform’s effectiveness in enhancing student engagement and comprehension of complex anatomical
+                systems, showcasing its potential to transform anatomy education.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="/news/the-holiday-update-is-finally-here-%25f0%259f%258e%2584">
+        <div class="post">
+          <div class="image-wrapper">
+            <img
+              src="https://news.medicinevirtual.com/wp-content/uploads/2025/06/38974507_934712088172845_6929487778161384632_n.jpg"
+              alt="The Holiday Update is Finally Here!">
+          </div>
+          <div class="text-content">
+            <div class="date">January 1, 2025</div>
+            <h3>The Holiday Update is Finally Here!</h3>
+            <div class="excerpt">
+              <p>The Holidays bring a new update to Human Anatomy VR. Take a look at the latest changes.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="/news/virtual-medicine-receives-deloitte-impact-stars-award-2024">
+        <div class="post">
+          <div class="image-wrapper">
+            <img src="https://news.medicinevirtual.com/wp-content/uploads/2025/06/Firefly-20250625154834-scaled.png"
+              alt="Virtual Medicine Receives Deloitte Impact Stars Award 2024">
+          </div>
+          <div class="text-content">
+            <div class="date">November 15, 2024</div>
+            <h3>Virtual Medicine Receives Deloitte Impact Stars Award 2024</h3>
+            <div class="excerpt">
+              <p>We are proud to announce that Virtual Medicine has been named an Impact Star in the prestigious
+                Technology Fast 50 Central Europe 2024 Awards by Deloitte!</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a
+        href="/news/queen-mary-university-of-london-study-supports-effectiveness-of-human-anatomy-vr-in-medical-education">
+        <div class="post">
+          <div class="image-wrapper">
+            <img src="https://news.medicinevirtual.com/wp-content/uploads/2025/07/maxresdefault-2.jpg"
+              alt="Queen Mary University of London Study Supports Effectiveness of Human Anatomy VR in Medical Education">
+          </div>
+          <div class="text-content">
+            <div class="date">April 20, 2024</div>
+            <h3>Queen Mary University of London Study Supports Effectiveness of Human Anatomy VR in Medical Education
+            </h3>
+            <div class="excerpt">
+              <p>A newly published peer-reviewed study conducted by researchers at Queen Mary University of London has
+                added further academic validation to the use of immersive virtual reality in anatomy education. </p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="/news/meta-recognizes-virtual-medicine-for-advancing-xr-education">
+        <div class="post">
+          <div class="image-wrapper">
+            <img src="https://news.medicinevirtual.com/wp-content/uploads/2023/10/Meta_Logo.jpg"
+              alt="Meta Recognizes Virtual Medicine for Advancing XR Education">
+          </div>
+          <div class="text-content">
+            <div class="date">October 27, 2023</div>
+            <h3>Meta Recognizes Virtual Medicine for Advancing XR Education</h3>
+            <div class="excerpt">
+              <p>Virtual Medicine is proud to announce its collaboration with Meta as part of an initiative to integrate
+                metaverse technologies into real-world training and education. </p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="/news/human-anatomy-vr-officially-launches-on-playstation-vr2">
+        <div class="post">
+          <div class="image-wrapper">
+            <img src="https://news.medicinevirtual.com/wp-content/uploads/2025/06/maxresdefault-1.jpg"
+              alt="Human Anatomy VR Officially Launches on PlayStation VR2">
+          </div>
+          <div class="text-content">
+            <div class="date">July 23, 2023</div>
+            <h3>Human Anatomy VR Officially Launches on PlayStation VR2</h3>
+            <div class="excerpt">
+              <p>Virtual Medicine is pleased to announce that its flagship educational application, Human Anatomy VR, is
+                now officially available on the PlayStation VR2, bringing immersive anatomical learning to a broader
+                audience through one of the world’s most popular virtual reality ecosystems.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="/news/how-penn-state-university-transformed-anatomy-learning-with-virtual-medicines-human-anatomy-vr">
+        <div class="post">
+          <div class="image-wrapper">
+            <img
+              src="https://news.medicinevirtual.com/wp-content/uploads/2025/08/Penn-State-University-Logo-2015-present-scaled.png"
+              alt="How Penn State University Transformed Anatomy Learning with Virtual Medicine’s Human Anatomy VR">
+          </div>
+          <div class="text-content">
+            <div class="date">June 21, 2023</div>
+            <h3>How Penn State University Transformed Anatomy Learning with Virtual Medicine’s Human Anatomy VR</h3>
+            <div class="excerpt">
+              <p>Penn State University’s BIOL 164 course takes anatomy education to the next level with Virtual
+                Medicine’s Human Anatomy VR. By integrating immersive VR technology, students gain a dynamic, hands-on
+                learning experience that complements traditional methods, enhancing engagement and understanding.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+  <section class="joint_vm">
+    <h2>Join our community today</h2>
+    <p>We have tailored the perfect solution for you</p>
+    <div style="display: flex;">
+      <button class="try big"
+        onclick="window.open('https://www.oculus.com/experiences/quest/3662196457238336/?utm_source=medicinevirtual.com', '_blank')">
+        <span>TRY FOR FREE</span>
+        <br />
+        <span style="font-size: 10px;">Personal</span>
+      </button>
+      <button class="buy big" onclick="window.open('http://portal.medicinevirtual.com/store', '_blank')">
+        <span>TRY FOR FREE</span>
+        <br />
+        <span style="font-size: 10px;">Institutions</span>
+      </button>
+      <button class="compare big" onclick="location.href='contact-form.php';">CONTACT US</button>
+    </div>
+  </section>
+
+  <section class="scroll_up">
+    <button class="try" onclick="$('html, body').animate({scrollTop : 0}, 1000);">SCROLL UP</button>
+  </section>
+
+  <footer>
+    <div class="footer_menu_container">
+      <div class="def_list_group">
+        <dl class="desktop-only-block">
+          <dt>Store</dt>
+          <dd><a href="http://portal.medicinevirtual.com/store" target="_blank">Buy Apps</a></dd>
+          <dd><a href="functions.html?tab=downloads">Download Apps</a></dd>
+          <dd><a href="functions.html?tab=functions">All Functions</a></dd>
+        </dl>
+        <dl>
+          <dt>Products</dt>
+          <dd><a href="functions.html?tab=downloads">Human Anatomy VR</a></dd>
+          <dd><a href="functions.html?tab=downloads">AR Anatomy</a></dd>
+          <dd><a href="functions.html?tab=downloads">Muscle Kinetics</a></dd>
+        </dl>
+        <dl>
+          <dt>License plans</dt>
+          <dd><a href="personal.html">Personal</a></dd>
+          <dd><a href="professional.html">Professional</a></dd>
+          <dd><a href="institution.html">Institution</a></dd>
+        </dl>
+        <dl>
+          <dt>Company</dt>
+          <dd><a href="contact.html">About us</a></dd>
+          <dd><a href="contact-form.php">Contact us</a></dd>
+        </dl>
+      </div>
+      <div class="footer-information">
+        <strong>*Important Information About Features for Surgical Planning and Clinical Use</strong><br /><br />
+        <span>The VR DICOM's specialized features tailored for surgical planning and pre-operative professional
+          applications are at the moment available for educational purposes only. For updates on product development,
+          regulatory status, availability, or any questions, please reach out to info@medicinevirtual.com.</span>
+      </div>
+    </div>
+    <div class="footer_menu_logo">
+      <img src="/img/nav-logo.png" onclick="location.href='index.html';" style="cursor: pointer;margin: 15px 0px;"
+        alt="logo-footer">
+      <span style="font-size: 11px; margin: 15px 0px;">Copyright © 2025, Virtual Medicine | <span
+          onclick="window.open('https://www.medicinevirtual.com/terms-and-conditions.html')"
+          style="cursor: pointer; color: #8EC1FE;">Terms & Conditions</span> | <span
+          onclick="window.open('https://www.medicinevirtual.com/privacy-policy.html')"
+          style="cursor: pointer; color: #8EC1FE;">Privacy Policy</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/cookieconsent-2.8.0/src/cookieconsent.js"></script>
+  <script src="assets/js/cookieconsent-2.8.0/src/cookieconsent-init.js?v=1.1"></script>
+
+  <script src="assets/js/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+  <script src="assets/tilt.js/src/tilt.jquery.js"></script>
+  <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.min.js?v=1.11"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script data-cookiecategory="analytics" type="text/plain" async
+    src="https://www.googletagmanager.com/gtag/js?id=G-2BT1WJCQLP"></script>
+  <script data-cookiecategory="analytics"
+    type="text/plain"> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-2BT1WJCQLP'); </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+No Content: https://www.medicinevirtual.com/news/assets/js/cookieconsent-2.8.0/src/cookieconsent.js

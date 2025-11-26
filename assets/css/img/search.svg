@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="no-js" lang="sk" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head>
+  <meta charset="utf-8">
+  <title>Virtual Medicine</title>
+  <meta name="description" content="Inovácia vzdelávania zdravotníckych pracovníkov a študentov">
+  <meta name="twitter:description" content="Inovácia vzdelávania zdravotníckych pracovníkov a študentov">
+  <meta name="keywords" content="VR, Virtual Reality, Human Anatomy, DICOM, CT, MRI">
+  <meta name="author" content="Design: Michal Tkáč, Development: Ondrej Malota">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Virtual Medicine">
+  <meta property="og:description" content="Inovácia vzdelávania zdravotníckych pracovníkov a študentov">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://medicinevirtual.com">
+  <meta property="og:image" content="https://medicinevirtual.com/img/cover_img.png">
+
+  <link rel="apple-touch-icon" href="../icon.png">
+
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/sk-main.css?v=1.2">
+
+  <meta name="theme-color" content="#FFFFFF">
+</head>
+
+<body style="padding-top: 0;">
+
+  <div class="bg_blur">
+  </div>
+
+  <header>
+    <div class="burger_menu_bg">
+      <div class="multilanguage-burger">
+        <img src="../img/svk-flag.png" style="opacity: 1; cursor: default">
+        <img src="../img/uk-flag.png" onclick="changeLanguage('en');">
+      </div>
+      <ul>
+        <li class=""><a href="xrexperience.html"><img src="../img/burger_menu_icon_xr_experience.svg"/>Produkty</a></li>
+        <li class=""><a href="student.html"><img src="../img/burger_menu_icon_student.svg" style="width: 35px;"/>Študent</a></li>
+        <li class=""><a href="professional.html"><img src="../img/burger_menu_icon_professional.svg" style="width: 35px;"/>Profesionál</a></li>
+        <li class=""><a href="institution.html"><img src="../img/burger_menu_icon_institution.svg"/>Inštitúcia</a></li>
+        <li class=""><a href="contact.html"><img src="../img/burger_menu_icon_contact_us.svg"/>O nás</a></li>
+      </ul>
+      <button class="try" onclick="location.href='contact-form.php';" style="border-radius: 20px;">KONTAKTUJTE NÁS</button>
+      <div class="burger_social_bar">
+        <img src="../img/social-facebook.svg" alt="FACEBOOK" class="social_ico" onclick="window.open('https://www.facebook.com/VRMedicine/')"/>
+        <img src="../img/social-instagram.svg" alt="INSTAGRAM" class="social_ico" onclick="window.open('https://www.instagram.com/virtual_medicine/?hl=en')"/>
+        <img src="../img/social-linkedin.svg" alt="LINKEDIN" class="social_ico" onclick="window.open('https://www.linkedin.com/company/virtual-medicine-vr-ar')"/>
+        <img src="../img/social-youtube.svg" alt="YOUTUBE" class="social_ico" onclick="window.open('https://www.youtube.com/channel/UChvqcOhNLxxWBc0FACQeXHg')"/>
+      </div>
+    </div>
+    <div class="nav_container nav_burger_container">
+      <nav>
+        <span class="nav_logo" onclick="location.href='index.html';">
+        <img src="../img/nav-logo.png" alt="VIRTUAL MEDICINE"/>
+        </span>
+  <!-- burger navbar -->
+          <div class="burger_navbar_container">
+            <div class="burger_navbar_item"></div>
+          </div>
+
+  <!-- burger navbar end -->
+        <ul>
+          <li class="nav_item_bg"></li>
+          <li class="nav_item"><a href="xrexperience.html">Produkty</a></li>
+          <li class="nav_item"><a href="student.html">Študent</a></li>
+          <li class="nav_item"><a href="professional.html">Profesionál</a></li>
+          <li class="nav_item"><a href="institution.html">Inštitúcia</a></li>
+          <li class="nav_item"><a href="contact.html">O nás</a></li>
+        </ul>
+        <button class="try" onclick="location.href='contact-form.php';">KONTAKTUJTE NÁS</button>
+        <div class="multilanguage responsive_hidden">
+          <img src="../img/svk-flag.png" style="opacity: 1; cursor: default">
+          <img src="../img/uk-flag.png" onclick="location.href='../index.html';">
+        </div>
+      </nav>
+    </div>
+  </header><section class="joint_vm">
+    <h2>Pridajte sa k našej komunite používateľov ešte dnes</h2>
+    <p>Máme pre Vás optimálne riešenie</p>
+    <div>
+      <button class="try" onclick="window.open('https://www.oculus.com/experiences/quest/3662196457238336/?utm_source=medicinevirtual.com', '_blank')">VYSKÚŠAJTE<br>ZADARMO</button>
+      <button class="buy" onclick="location.href='xrexperience.html';">KÚPIŤ</button>
+      <button class="compare" onclick="location.href='contact-form.php';">KONTAKTUJTE NÁS</button>
+    </div>
+  </section>
+
+  <section class="scroll_up">
+    <button class="try" onclick="$('html, body').animate({scrollTop : 0}, 1000);">PRESUNÚŤ<br>HORE</button>
+  </section>
+
+  <footer>
+    <div class="footer_menu_container">
+      <div class="def_list_group">
+        <dl>
+          <dt>Virtual Medicine</dt>
+          <dd><a href="https://www.oculus.com/experiences/quest/3662196457238336/?utm_source=medicinevirtual.com" target="_blank">Vyskúšajte zadarmo</a></dd>
+          <dd><a href="xrexperience.html">Kúpiť</a></dd>
+        </dl>
+        <dl>
+          <dt>Products</dt>
+          <dd><a href="xrexperience.html#download_now">Anatomy Explorer</a></dd>
+          <dd><a href="xrexperience.html#try_for_free">AR Anatomy</a></dd>
+          <dd><a href="institution.html">Virtual Anatomy<br>Classroom</a></dd>
+          <dd><a href="xrexperience.html#try_for_free">High School Anatomy</a></dd>
+        </dl>
+        <dl>
+          <dt>Licenčný plán</dt>
+          <dd><a href="student.html">Študent</a></dd>
+          <dd><a href="professional.html">Profesionál</a></dd>
+          <dd><a href="institution.html">Inštitúcia</a></dd>
+        </dl>
+        <dl>
+          <dt>Firma</dt>
+          <dd><a href="contact.html">O nás</a></dd>
+          <dd><a href="contact-form.php">Kontaktujte nás</a></dd>
+          <dd><a href="contact.html#team">Vedenie spoločnosti</a></dd>
+        </dl>
+      </div>
+    </div>
+    <div class="footer_menu_logo">
+      <img src="../img/nav-logo.png" onclick="location.href='index.html';" style="cursor: pointer;">
+      <span style="font-size: 11px; margin: 10px 0;">Copyright © 2025, Virtual Medicine | <span onclick="window.open('/doc/License_VM.pdf')" style="cursor: pointer; color: #8EC1FE;">Licencia</span></span>
+    </div>
+  </footer>
+
+  <script defer src="../assets/js/cookieconsent-2.8.0/src/cookieconsent.js"></script>
+  <script defer src="../assets/js/cookieconsent-2.8.0/src/cookieconsent-init.js"></script>
+
+  <script src="../assets/js/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../assets/tilt.js/src/tilt.jquery.js"></script>
+  <script src="../assets/js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="../assets/js/plugins.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+  <!-- Google tag (gtag.js) --> 
+  <script data-cookiecategory="analytics" type="text/plain" async src="https://www.googletagmanager.com/gtag/js?id=G-2BT1WJCQLP"></script> 
+  <script data-cookiecategory="analytics" type="text/plain"> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-2BT1WJCQLP'); </script>
+</body>
+
+</html>
