@@ -4,8 +4,8 @@
       "name": "General",
       "questions": [
         {
-          "question": "What is Virtual Medicine's Mission?",
-          "answer": "Virtual Medicine's mission is to revolutionize the field of medical education through our award-winning [Human Anatomy VR](https://www.youtube.com/watch?v=fbfLqdhgOW4) software.\n\nOur state-of-the-art product harnesses the power of Virtual Reality, Mixed Reality, and Augmented Reality to vividly present over 13,000 detailed anatomical structures, each with an in-depth description. It incorporates innovative features such as multi-user capability, providing an interactive and collaborative learning environment. With more than 1,500+ 3D VR cadavers, our platform offers a comprehensive and diverse range of anatomical exploration. Additionally, it includes a test management system, enhancing its utility as an educational tool by enabling the monitoring and assessment of learning progress.\n\nThis approach not only aids in a deeper understanding of human anatomy but also bridges the gap between theoretical knowledge and practical application.\n\nWe are the first company in the world to offer a complete anatomical 3D VR atlas with a [VR DICOM](https://www.youtube.com/watch?v=9zufDNWCaro) module in one product.\n\nThis advancement is in line with our mission to integrate pioneering technology into medical education. This feature allows users to spatially display patient data from CT or MRI scans with advanced features such as staining and slicing, providing a more immersive and detailed approach to understanding complex anatomy and pathology within medical imaging.\n\nUltimately, our mission at Virtual Medicine is to provide innovative, technologically advanced tools that enrich the educational journey of medical students and professionals, preparing them for the challenges of modern healthcare with a focus on precision, detail, and practical application."
+          "question": "What is Medicurate Surgical's Mission?",
+          "answer": "Medicurate Surgical's mission is to revolutionize the field of medical education through our award-winning [Human Anatomy VR](https://www.youtube.com/watch?v=fbfLqdhgOW4) software.\n\nOur state-of-the-art product harnesses the power of Virtual Reality, Mixed Reality, and Augmented Reality to vividly present over 13,000 detailed anatomical structures, each with an in-depth description. It incorporates innovative features such as multi-user capability, providing an interactive and collaborative learning environment. With more than 1,500+ 3D VR cadavers, our platform offers a comprehensive and diverse range of anatomical exploration. Additionally, it includes a test management system, enhancing its utility as an educational tool by enabling the monitoring and assessment of learning progress.\n\nThis approach not only aids in a deeper understanding of human anatomy but also bridges the gap between theoretical knowledge and practical application.\n\nWe are the first company in the world to offer a complete anatomical 3D VR atlas with a [VR DICOM](https://www.youtube.com/watch?v=9zufDNWCaro) module in one product.\n\nThis advancement is in line with our mission to integrate pioneering technology into medical education. This feature allows users to spatially display patient data from CT or MRI scans with advanced features such as staining and slicing, providing a more immersive and detailed approach to understanding complex anatomy and pathology within medical imaging.\n\nUltimately, our mission at Medicurate Surgical is to provide innovative, technologically advanced tools that enrich the educational journey of medical students and professionals, preparing them for the challenges of modern healthcare with a focus on precision, detail, and practical application."
         },
         {
           "question": "Who is Human Anatomy VR designed for?",
@@ -25,7 +25,7 @@
         },
         {
           "question": "How can I download Human Anatomy VR?",
-          "answer": "If you are an educator or an institution, please follow the steps for getting the Human Anatomy VR Basic or Essential version from our [Virtual Medicine Store](https://portal.medicinevirtual.com/store).\n\nIf you are an individual or a student, you can download Human Anatomy VR directly from the Meta Store:\n\n- Please [click here](https://www.meta.com/en-gb/experiences/human-anatomy-vr-for-institutions/3662196457238336/?srsltid=AfmBOoqNaz9w5c88uHBMgKnguinuGtMFTS_yePAx8Jt041UKXYvawKHH) to open the Human Anatomy app page in the Meta Store. \n\n- Get the app by clicking the Get button.\n\n- To proceed, you need to log in to your Meta account that is paired with your Meta Quest device.\n\n- When successful, the button should state 'Purchased' and the application will be added to the application library on your Meta Quest device.\n\nIf you prefer to install the app using your smartphone (with the Meta Horizon app), you search for 'Human Anatomy VR' and continue with the standard purchase process."
+          "answer": "If you are an educator or an institution, please follow the steps for getting the Human Anatomy VR Basic or Essential version from our [Medicurate Surgical Store](https://portal.medicinevirtual.com/store).\n\nIf you are an individual or a student, you can download Human Anatomy VR directly from the Meta Store:\n\n- Please [click here](https://www.meta.com/en-gb/experiences/human-anatomy-vr-for-institutions/3662196457238336/?srsltid=AfmBOoqNaz9w5c88uHBMgKnguinuGtMFTS_yePAx8Jt041UKXYvawKHH) to open the Human Anatomy app page in the Meta Store. \n\n- Get the app by clicking the Get button.\n\n- To proceed, you need to log in to your Meta account that is paired with your Meta Quest device.\n\n- When successful, the button should state 'Purchased' and the application will be added to the application library on your Meta Quest device.\n\nIf you prefer to install the app using your smartphone (with the Meta Horizon app), you search for 'Human Anatomy VR' and continue with the standard purchase process."
         },
         {
           "question": "Is collaboration between us possible?",
@@ -49,9 +49,9 @@
           "answer": "If you have a Human Anatomy VR - [Essential VR license](https://portal.medicinevirtual.com/store/products/premium-vr-vVWY34ea), you can use the Multi-User feature and host a VR session with up to 100 participants (please note, for creating VR sessions with more than 20 users at a time, you must first contact us at info@medicinevirtual.com)."
         },
         {
-        "question": "Is it possible for someone without a medical background to subscribe to your software solutions for personal use?",
+          "question": "Is it possible for someone without a medical background to subscribe to your software solutions for personal use?",
           "answer": "Yes. Our software solutions are made easy for anybody interested in learning about the human body. Human Anatomy VR is available for one-time purchase and personal usage only through [Meta AppLab Store](https://www.meta.com/experiences/6643334382420936?ranking_trace=0_6643334382420936_QUESTSEARCH_C322wieu6wiSkCkQYW_eyJwbGF0Zm9ybSI6ImFuZHJvaWQtNmRvZiIsInF1ZXJ5X3N0cmluZyI6Imh1bWFuIGFuYXRvbXkgdnIiLCJsb2NhbGUiOiJlbl9VUyIsIm51bV9mZXRjaCI6MTAxLCJzZWFyY2hfcm91dGUiOiJ3ZWIiLCJ0YWdfaWRzIjpbXX0=_eyJzZWN0aW9uX2tleSI6IlNFQVJDSCJ9)."
-          }
+        }
       ]
     },
     {
@@ -75,7 +75,7 @@
         },
         {
           "question": "Is it possible for me to personalize the questions in an exam?",
-          "answer": "[Virtual Medicine Portal](https://portal.medicinevirtual.com/Account/Login) allows you to do that. You can log in and go to 'Test Manager' to select your questions for a test and add the customized quiz to an exam."
+          "answer": "[Medicurate Surgical Portal](https://portal.medicinevirtual.com/Account/Login) allows you to do that. You can log in and go to 'Test Manager' to select your questions for a test and add the customized quiz to an exam."
         },
         {
           "question": "Where can I find cross-section feature in Human Anatomy VR?",
@@ -120,7 +120,7 @@
         },
         {
           "question": "What types of licenses are available for Human Anatomy VR?",
-          "answer": "Depending on your intended use - personal, professional, or institutional — we offer several types of licenses: \n\n- Personal License – for individual, non-commercial use (Personal license for one device, One license maximum) \n\n- Professional License – for patient education (Up to two professional licenses, each for one device)\n\n- Institutional License – for universities, schools, and other organizations (Option for unlimited number of licenses)\n\nInstitutional license has two different types based on available features and advanced content: Basic VR and Essential VR. For more information, visit the [Virtual Medicine Store](https://portal.medicinevirtual.com/store)."
+          "answer": "Depending on your intended use - personal, professional, or institutional — we offer several types of licenses: \n\n- Personal License – for individual, non-commercial use (Personal license for one device, One license maximum) \n\n- Professional License – for patient education (Up to two professional licenses, each for one device)\n\n- Institutional License – for universities, schools, and other organizations (Option for unlimited number of licenses)\n\nInstitutional license has two different types based on available features and advanced content: Basic VR and Essential VR. For more information, visit the [Medicurate Surgical Store](https://portal.medicinevirtual.com/store)."
         },
         {
           "question": "What is the difference between Human Anatomy VR for Personal Use and for Professionals?",
@@ -136,7 +136,7 @@
         },
         {
           "question": "What kind of subscription should I purchase?",
-          "answer": "If you plan to use Human Anatomy VR individually for personal and non-commercial purposes, we would recommend to purchase our application from the [Meta Store](https://www.meta.com/experiences/6643334382420936/) or [PICO Store](https://store-global.picoxr.com/global/detail/1/7179344687503785989). \n\nIf you belong to an institution, and plan to use it for revenue-generating purposes, like giving anatomy lectures at schools, you must purchase the Institutional license from [Virtual Medicine Store](https://portal.medicinevirtual.com/store). \n\nWe are more than happy to answer any inquiries you have, so feel free to contact us at: info@medicinevirtual.com"
+          "answer": "If you plan to use Human Anatomy VR individually for personal and non-commercial purposes, we would recommend to purchase our application from the [Meta Store](https://www.meta.com/experiences/6643334382420936/) or [PICO Store](https://store-global.picoxr.com/global/detail/1/7179344687503785989). \n\nIf you belong to an institution, and plan to use it for revenue-generating purposes, like giving anatomy lectures at schools, you must purchase the Institutional license from [Medicurate Surgical Store](https://portal.medicinevirtual.com/store). \n\nWe are more than happy to answer any inquiries you have, so feel free to contact us at: info@medicinevirtual.com"
         },
         {
           "question": "What subscription plan should I purchase in order to host a virtual classroom in Human Anatomy VR or VR DICOM?",
@@ -148,7 +148,7 @@
         },
         {
           "question": "How do I pay for the subscription plan?",
-          "answer": "We offer a variety of payment methods for your convenience, including Credit/Debit Cards, Google Pay,  Apple Pay, PayPal, SEPA Direct Debit, among others.\n\nTo select your preferred payment method, visit our [Virtual Medicine Store](https://lm.medicinevirtual.com/store). \n\nOur secure checkout process will guide you through every step."
+          "answer": "We offer a variety of payment methods for your convenience, including Credit/Debit Cards, Google Pay,  Apple Pay, PayPal, SEPA Direct Debit, among others.\n\nTo select your preferred payment method, visit our [Medicurate Surgical Store](https://lm.medicinevirtual.com/store). \n\nOur secure checkout process will guide you through every step."
         },
         {
           "question": "Will my subscription be automatically renewed when it reaches its expiration date?",
@@ -156,7 +156,7 @@
         },
         {
           "question": "Is there a free trial version of your software solutions?",
-          "answer": "Yes. You can obtain a seven-day free trial version (no credit card needed) of Human Anatomy VR - Basic VR or Essential VR from the [Virtual Medicine Store](https://portal.medicinevirtual.com/store)."
+          "answer": "Yes. You can obtain a seven-day free trial version (no credit card needed) of Human Anatomy VR - Basic VR or Essential VR from the [Medicurate Surgical Store](https://portal.medicinevirtual.com/store)."
         }
       ]
     },
@@ -169,7 +169,7 @@
         },
         {
           "question": "Is there a trial/demo of your products?",
-          "answer": "Yes. Please follow the steps for getting a trial of Human Anatomy VR - Basic VR or Essential VR version from our [Virtual Medicine Store](https://portal.medicinevirtual.com/store)."
+          "answer": "Yes. Please follow the steps for getting a trial of Human Anatomy VR - Basic VR or Essential VR version from our [Medicurate Surgical Store](https://portal.medicinevirtual.com/store)."
         },
         {
           "question": "Is it possible to tailor your software solutions to suit my specific requirements?",
@@ -210,7 +210,7 @@
         },
         {
           "question": "Do you offer VR headsets alongside your software solutions?",
-          "answer": "No, since our current focus is on software product development, please note that VR hardware is not included in the Virtual Medicine license.\n\nHowever, we would be pleased to assist you in connecting with either our local distributors or one of our hardware collaboration partners to help you find the most suitable hardware and software package to meet your requirements."
+          "answer": "No, since our current focus is on software product development, please note that VR hardware is not included in the Medicurate Surgical license.\n\nHowever, we would be pleased to assist you in connecting with either our local distributors or one of our hardware collaboration partners to help you find the most suitable hardware and software package to meet your requirements."
         }
       ]
     },
@@ -219,11 +219,11 @@
       "questions": [
         {
           "question": "What is the best way to incorporate a virtual classroom with Human Anatomy VR or VR DICOM into my organization?",
-          "answer": "As many are aware, VR is gaining traction in educational and organizational settings for knowledge sharing and real-time collaboration. At Virtual Medicine, we specialize in Human Anatomy VR and VR DICOM solutions to support individuals and organizations like yours.\n\nHere's a practical example: If you're a medical instructor, you can use Human Anatomy VR to better prepare your students for work with cadavers. Access our curated courses created on your own, allowing you to teach and demonstrate human anatomy through a virtual model in a VR lab, lecture, or workshop before they perform real surgeries with cadavers."
+          "answer": "As many are aware, VR is gaining traction in educational and organizational settings for knowledge sharing and real-time collaboration. At Medicurate Surgical, we specialize in Human Anatomy VR and VR DICOM solutions to support individuals and organizations like yours.\n\nHere's a practical example: If you're a medical instructor, you can use Human Anatomy VR to better prepare your students for work with cadavers. Access our curated courses created on your own, allowing you to teach and demonstrate human anatomy through a virtual model in a VR lab, lecture, or workshop before they perform real surgeries with cadavers."
         },
         {
           "question": "Where can I download Human Anatomy VR and VR DICOM?",
-          "answer": "If you are a student, you can download Human Anatomy VR directly from the [Meta AppLab Store](https://www.meta.com/experiences/6643334382420936/). \n\n If you are an educator, professional, or institution, please follow the steps for getting Human Anatomy VR - Basic VR or Essential VR version from our [Virtual Medicine Store](https://portal.medicinevirtual.com/store)."
+          "answer": "If you are a student, you can download Human Anatomy VR directly from the [Meta AppLab Store](https://www.meta.com/experiences/6643334382420936/). \n\n If you are an educator, professional, or institution, please follow the steps for getting Human Anatomy VR - Basic VR or Essential VR version from our [Medicurate Surgical Store](https://portal.medicinevirtual.com/store)."
         }
       ]
     },

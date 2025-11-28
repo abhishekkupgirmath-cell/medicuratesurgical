@@ -1,0 +1,14 @@
+{
+  "name": "medicurate-surgical",
+  "version": "1.0.0",
+  "description": "Medicurate Surgical Website",
+  "scripts": {
+    "start": "node server.js",
+    "serve": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
+

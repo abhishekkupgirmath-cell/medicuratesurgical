@@ -1,0 +1,211 @@
+:root {
+  --primary-color: #008080;
+  --secondary-color: #20B2AA;
+  --accent-color: #40E0D0;
+  --dark-bg: #1a1a1a;
+  --light-bg: #f4f4f4;
+  --text-color: #333;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Sen', sans-serif;
+  color: var(--text-color);
+  background-color: var(--white);
+}
+
+/* Navbar Redesign */
+header {
+  background-color: var(--white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 80px;
+}
+
+.nav_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+}
+
+.nav_logo img {
+  max-height: 100px !important;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav ul li a,
+.dropbtn {
+  color: var(--text-color);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover,
+.dropbtn:hover {
+  color: var(--primary-color);
+}
+
+.nav_item_button.try {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav_item_button.try:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Hero Section */
+.title_banner {
+  position: relative;
+  color: var(--white);
+  text-align: center;
+}
+
+.title_banner_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.title_banner h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
+.title_banner h6 {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Buttons */
+button.try,
+button.buy {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+button.try:hover,
+button.buy:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button.buy {
+  background-color: var(--secondary-color);
+}
+
+button.buy:hover {
+  background-color: var(--primary-color);
+}
+
+/* Sections */
+section {
+  padding: 80px 0;
+}
+
+h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+.contrast-section {
+  background-color: var(--light-bg);
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-bg);
+  color: var(--white);
+  padding: 60px 0 20px;
+}
+
+.footer_menu_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.def_list_group dl dt {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.def_list_group dl dd a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.def_list_group dl dd a:hover {
+  color: var(--white);
+}
+
+.footer-information {
+  max-width: 400px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav_container {
+    padding: 0 20px;
+  }
+
+  .title_banner h1 {
+    font-size: 2rem;
+  }
+
+  .title_banner_content {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .footer_menu_container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  .burger_menu_bg {
+    display: none !important;
+  }
+}
