@@ -1,1 +1,1 @@
-No Content: https://www.medicinevirtual.com/news/assets/tilt.js/src/tilt.jquery.js
+No Content: https://http://www.medicuratesurgical.com/news/assets/tilt.js/src/tilt.jquery.js

@@ -1,1 +1,1 @@
-No Content: https://www.medicinevirtual.com/news/assets/js/cookieconsent-2.8.0/src/cookieconsent-init.js?v=1.1
+No Content: https://http://www.medicuratesurgical.com/news/assets/js/cookieconsent-2.8.0/src/cookieconsent-init.js?v=1.1

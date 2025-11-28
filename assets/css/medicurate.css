@@ -130,9 +130,6 @@ button.buy:hover {
 }
 
 /* Sections */
-section {
-  padding: 80px 0;
-}
 
 h2 {
   color: var(--primary-color);

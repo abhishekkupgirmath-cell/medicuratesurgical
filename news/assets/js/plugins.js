@@ -1,1 +1,1 @@
-No Content: https://www.medicinevirtual.com/news/assets/js/plugins.js
+No Content: https://http://www.medicuratesurgical.com/news/assets/js/plugins.js

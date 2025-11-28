@@ -42,7 +42,7 @@
         <li class=""><a href="institution.html"><img src="../img/burger_menu_icon_institution.svg"/>Inštitúcia</a></li>
         <li class=""><a href="contact.html"><img src="../img/burger_menu_icon_contact_us.svg"/>O nás</a></li>
       </ul>
-      <button class="try" onclick="location.href='contact-form.php';" style="border-radius: 20px;">KONTAKTUJTE NÁS</button>
+      <button class="try" onclick="location.href='contact-form.html';" style="border-radius: 20px;">KONTAKTUJTE NÁS</button>
       <div class="burger_social_bar">
         <img src="../img/social-facebook.svg" alt="FACEBOOK" class="social_ico" onclick="window.open('https://www.facebook.com/VRMedicine/')"/>
         <img src="../img/social-instagram.svg" alt="INSTAGRAM" class="social_ico" onclick="window.open('https://www.instagram.com/virtual_medicine/?hl=en')"/>
@@ -69,7 +69,7 @@
           <li class="nav_item"><a href="institution.html">Inštitúcia</a></li>
           <li class="nav_item"><a href="contact.html">O nás</a></li>
         </ul>
-        <button class="try" onclick="location.href='contact-form.php';">KONTAKTUJTE NÁS</button>
+        <button class="try" onclick="location.href='contact-form.html';">KONTAKTUJTE NÁS</button>
         <div class="multilanguage responsive_hidden">
           <img src="../img/svk-flag.png" style="opacity: 1; cursor: default">
           <img src="../img/uk-flag.png" onclick="location.href='../index.html';">
@@ -82,7 +82,7 @@
     <div>
       <button class="try" onclick="window.open('https://www.oculus.com/experiences/quest/3662196457238336/?utm_source=medicinevirtual.com', '_blank')">VYSKÚŠAJTE<br>ZADARMO</button>
       <button class="buy" onclick="location.href='xrexperience.html';">KÚPIŤ</button>
-      <button class="compare" onclick="location.href='contact-form.php';">KONTAKTUJTE NÁS</button>
+      <button class="compare" onclick="location.href='contact-form.html';">KONTAKTUJTE NÁS</button>
     </div>
   </section>
 
@@ -114,7 +114,7 @@
         <dl>
           <dt>Firma</dt>
           <dd><a href="contact.html">O nás</a></dd>
-          <dd><a href="contact-form.php">Kontaktujte nás</a></dd>
+          <dd><a href="contact-form.html">Kontaktujte nás</a></dd>
           <dd><a href="contact.html#team">Vedenie spoločnosti</a></dd>
         </dl>
       </div>

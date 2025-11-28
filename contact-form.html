@@ -82,7 +82,7 @@
         <img src="/img/svk-flag.png" onclick="changeLanguage('sk');">
         <img src="/img/uk-flag.png" style="opacity: 1; cursor: default">
       </div> -->
-      <button class="try" onclick="location.href='contact-form.php';" style="border-radius: 20px;">CONTACT US</button>
+      <button class="try" onclick="location.href='contact-form.html';" style="border-radius: 20px;">CONTACT US</button>
       <div class="burger_social_bar">
         <img src="/img/social-facebook.svg" alt="FACEBOOK" class="social_ico"
           onclick="window.open('https://www.facebook.com/MedicurateSurgical/')" />
@@ -97,7 +97,7 @@
     <div class="nav_container nav_burger_container">
       <nav>
         <span class="nav_logo" onclick="location.href='/index.html';">
-          <img src="/img/medicurate.jpeg" alt="Medicurate Surgical" style="padding-left: 10px;" />
+          <img src="/img/medicurate.png" alt="Medicurate Surgical" style="padding-left: 10px;" />
         </span>
         <!-- burger navbar -->
         <div class="burger_navbar_container">
@@ -125,7 +125,7 @@
 
           <li class="nav_item"><a href="/contact.html">About Us</a></li>
         </ul>
-        <button class="nav_item_button try" onclick="location.href='contact-form.php';">CONTACT US</button>
+        <button class="nav_item_button try" onclick="location.href='contact-form.html';">CONTACT US</button>
         <!-- <div class="multilanguage responsive_hidden">
           <img src="/img/svk-flag.png" onclick="location.href='sk/index.html';">
           <img src="/img/uk-flag.png" style="opacity: 1; cursor: default">
@@ -165,7 +165,7 @@
     <p>Please fill out the form below and we will contact you shortly.<br><br>
       Your information stays safe with us. We respect your privacy and will never share your details.</p>
     <br><br>
-    <form action="contact-form.php" method="POST" class="form" id="form">
+    <form action="contact-form.html" method="POST" class="form" id="form">
       <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
       <input type="hidden" name="action" value="validate_captcha">
       <div class="form_item_group form_item_group_mobile" style="align-items: flex-end;">
@@ -477,11 +477,6 @@
             <textarea name="request" type="text" class="input_text valid_text"
               style="height: 150px; padding: 20px 20px;"></textarea>
           </div>
-          <div class="form_item">
-            <label for="licensesinfo" class="label_text">How many and what type of licenses are you interested in? <span
-                style="color: darkred;">&nbsp*</span></label>
-            <input name="licensesinfo" type="text" class="input_text valid_text">
-          </div>
         </div>
 
         <div class="form_item_group_column valid_about_container" style="margin-top: 30px;">
@@ -490,11 +485,11 @@
                 style="color: darkred;">&nbsp*</span></label>
             <div class="form_item_group">
               <input name="onlinestore" type="checkbox" class="valid_checkbox_about">
-              <label for="onlinestore">From an online store</label>
+              <label for="onlinestore">From Website</label>
             </div>
             <div class="form_item_group">
               <input name="searchingonline" type="checkbox" class="valid_checkbox_about">
-              <label for="searchingonline">Searching online</label>
+              <label for="searchingonline">Friends</label>
             </div>
             <div class="form_item_group">
               <input name="socialmedia" type="checkbox" class="valid_checkbox_about">
@@ -520,39 +515,19 @@
       </div>
       <div class="form_submit_container">
         <h5>Thank you, Medicurate Surgical team.</h5>
-        <button id="submit_button" class="try">SUBMIT</button>
+        <button id="submit_button" type="button" class="try">SUBMIT</button>
       </div>
     </form>
   </section>
   <div class="address">
     <div>
-      <b>Medicurate Surgical, s.r.o.</b><br>
-      Digital Park II, Einsteinova 25<br>
-      851 01 Bratislava, Slovakia<br>
-      European Union<br>
+      <b>Medicurate Surgical</b><br>
+      Bangalore,Karnataka
     </div>
   </div>
 
   <hr style="opacity: 0.5; margin-top: 30px;">
 
-  <section class="joint_vm">
-    <h2>Join our community today</h2>
-    <p>We have tailored the perfect solution for you</p>
-    <div style="display: flex;">
-      <button class="try big"
-        onclick="window.open('https://www.oculus.com/experiences/quest/3662196457238336/?utm_source=medicuratesurgical.com', '_blank')">
-        <span>TRY FOR FREE</span>
-        <br />
-        <span style="font-size: 10px;">Personal</span>
-      </button>
-      <button class="buy big" onclick="window.open('https://portal.medicuratesurgical.com/store', '_blank')">
-        <span>TRY FOR FREE</span>
-        <br />
-        <span style="font-size: 10px;">Institutions</span>
-      </button>
-      <button class="compare big" onclick="location.href='contact-form.php';">CONTACT US</button>
-    </div>
-  </section>
 
   <section class="scroll_up">
     <button class="try" onclick="$('html, body').animate({scrollTop : 0}, 1000);">SCROLL UP</button>
@@ -560,33 +535,33 @@
 
   <footer>
     <div class="footer_menu_container">
-
-      <dl>
-        <dt>License plans</dt>
-        <dd><a href="personal.html">Personal</a></dd>
-        <dd><a href="professional.html">Professional</a></dd>
-        <dd><a href="institution.html">Institution</a></dd>
-      </dl>
-      <dl>
-        <dt>Company</dt>
-        <dd><a href="contact.html">About us</a></dd>
-        <dd><a href="contact-form.php">Contact us</a></dd>
-      </dl>
-    </div>
-    <div class="footer-information">
-      <strong>*Important Information About Features for Surgical Planning and Clinical Use</strong><br /><br />
-      <span>The VR DICOM's specialized features tailored for surgical planning and pre-operative professional
-        applications are at the moment available for educational purposes only.  For updates on product development,
-        regulatory status, availability, or any questions, please reach out to info@medicuratesurgical.com.</span>
-    </div>
+      <div class="def_list_group">
+        <dl>
+          <dt>Products</dt>
+          <dd><a href="personal.html">Personal</a></dd>
+          <dd><a href="professional.html">Professional</a></dd>
+          <dd><a href="institution.html">Institution</a></dd>
+        </dl>
+        <dl>
+          <dt>Company</dt>
+          <dd><a href="contact.html">About us</a></dd>
+          <dd><a href="contact-form.php">Contact us</a></dd>
+        </dl>
+      </div>
+      <div class="footer-information">
+        <strong>*Important Information About Features for Surgical Planning and Clinical Use</strong><br /><br />
+        <span>The VR DICOM's specialized features tailored for surgical planning and pre-operative professional
+          applications are at the moment available for educational purposes only.  For updates on product development,
+          regulatory status, availability, or any questions, please reach out to info@medicuratesurgical.com.</span>
+      </div>
     </div>
     <div class="footer_menu_logo">
       <img src="/img/medicurate.png" onclick="location.href='index.html';" style="cursor: pointer;margin: 15px 0px;"
         alt="logo-footer">
       <span style="font-size: 11px; margin: 15px 0px;">Copyright © 2025, Medicurate Surgical | <span
-          onclick="window.open('https://www.medicinevirtual.com/terms-and-conditions.html')"
-          style="cursor: pointer; color: #8EC1FE;">Terms & Conditions</span> | <span
-          onclick="window.open('https://www.medicinevirtual.com/privacy-policy.html')"
+          onclick="window.open('https://http://www.medicuratesurgical.com')"
+          style="cursor: pointer; color: #8EC1FE;">Terms &
+          Conditions</span> | <span onclick="window.open('https://http://www.medicuratesurgical.com')"
           style="cursor: pointer; color: #8EC1FE;">Privacy Policy</span>
     </div>
   </footer>
@@ -607,6 +582,54 @@
   <script data-cookiecategory="analytics"
     type="text/plain"> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-2BT1WJCQLP'); </script>
 
+  <script>
+    document.getElementById('submit_button').addEventListener('click', function (event) {
+      event.preventDefault();
+
+      const form = document.getElementById('form');
+      const formData = new FormData(form);
+
+      // Basic validation
+      const name = formData.get('name');
+      const email = formData.get('email');
+
+      if (!name || !email) {
+        alert('Please fill in at least your Name and Email.');
+        return;
+      }
+
+      let body = "New Contact Form Submission:\n\n";
+
+      body += "Title: " + (formData.get('title') || '') + "\n";
+      body += "Name: " + name + "\n";
+      body += "Email: " + email + "\n";
+      body += "Address: " + (formData.get('addressline') || '') + "\n";
+      body += "Phone: " + (formData.get('phone') || '') + "\n";
+      body += "City: " + (formData.get('city') || '') + "\n";
+      body += "Region: " + (formData.get('region') || '') + "\n";
+      body += "Postal Code: " + (formData.get('postal') || '') + "\n";
+      body += "Country: " + (formData.get('country') || '') + "\n";
+      body += "Profession: " + (formData.get('profession') || '') + "\n";
+      body += "Institution/Department: " + (formData.get('department') || '') + "\n\n";
+
+      body += "Request:\n" + (formData.get('request') || '') + "\n\n";
+
+      body += "How did you hear about us:\n";
+      if (formData.get('onlinestore')) body += "- From Website\n";
+      if (formData.get('searchingonline')) body += "- Friends\n";
+      if (formData.get('socialmedia')) body += "- From Social Media\n";
+      if (formData.get('other')) body += "- Other: " + (formData.get('otherinput') || '') + "\n";
+
+      const subject = "Contact Form Submission from " + (name || 'User');
+      const recipient = "info@medicuratesurgical.com";
+
+      // Construct Gmail Compose URL
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      // Open Gmail in a new tab
+      window.open(gmailUrl, '_blank');
+    });
+  </script>
 </body>
 
 </html>

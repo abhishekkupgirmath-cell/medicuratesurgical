@@ -42,7 +42,7 @@
         <li class=""><a href="institution.html"><img src="../img/burger_menu_icon_institution.svg"/>Inštitúcia</a></li>
         <li class=""><a href="contact.html"><img src="../img/burger_menu_icon_contact_us.svg"/>O nás</a></li>
       </ul>
-      <button class="try" onclick="location.href='contact-form.php';" style="border-radius: 20px;">KONTAKTUJTE NÁS</button>
+      <button class="try" onclick="location.href='contact-form.html';" style="border-radius: 20px;">KONTAKTUJTE NÁS</button>
       <div class="burger_social_bar">
         <img src="../img/social-facebook.svg" alt="FACEBOOK" class="social_ico" onclick="window.open('https://www.facebook.com/VRMedicine/')"/>
         <img src="../img/social-instagram.svg" alt="INSTAGRAM" class="social_ico" onclick="window.open('https://www.instagram.com/virtual_medicine/?hl=en')"/>
@@ -69,5 +69,5 @@
           <li class="nav_item"><a href="institution.html">Inštitúcia</a></li>
           <li class="nav_item"><a href="contact.html">O nás</a></li>
         </ul>
-        <button class="try" onclick="location.href='contact-form.php';">KONTAKTUJTE NÁS</button>
+        <button class="try" onclick="location.href='contact-form.html';">KONTAKTUJTE NÁS</button>
         <div class="multilanguage responsive_hidden"
