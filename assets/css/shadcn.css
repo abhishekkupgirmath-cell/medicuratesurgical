@@ -1,0 +1,222 @@
+/* Shadcn/UI Inspired Theme & Utilities */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    /* Vivid/Bento Palette based on Vailu Template */
+    --background: #fdfdfd;
+    --foreground: #000000;
+
+    --card: #ffffff;
+    --card-foreground: #000000;
+
+    --popover: #ffffff;
+    --popover-foreground: #000000;
+
+    /* Primary is now the Neon Lime */
+    --primary: #ccff00;
+    --primary-foreground: #000000;
+
+    /* Secondary is Bold Black */
+    --secondary: #000000;
+    --secondary-foreground: #ccff00;
+
+    --muted: #f4f4f5;
+    --muted-foreground: #52525b;
+
+    --accent: #00d4ff;
+    /* Adding a Cyan pop for "color full" variety */
+    --accent-foreground: #000000;
+
+    --destructive: #ff4545;
+    --destructive-foreground: #ffffff;
+
+    --border: #e4e4e7;
+    --input: #e4e4e7;
+    --ring: #000000;
+
+    /* Large Radius for Bento Styling */
+    --radius: 2rem;
+
+    /* Mapping to Medicurate Variables */
+    --primary-color: #ccff00;
+    /* Neon Lime */
+    --secondary-color: #000000;
+    /* Black */
+    --accent-color: #00d4ff;
+    /* Cyan Pop */
+    --text-color: #0d0d0d;
+    --light-bg: #f7f7f7;
+    --dark-bg: #121212;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Inter', sans-serif !important;
+    /* Force Inter over Sen */
+    background-color: var(--background);
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Glassmorphism Navbar */
+header {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    box-shadow: none !important;
+    /* Remove old heavy shadow */
+}
+
+/* Modern Buttons (Shadcn Style) */
+/* Modern Buttons (Vibrant/Bento Style) */
+button.try,
+button.buy,
+.button-premium {
+    border-radius: 9999px !important;
+    /* Pill shape for buttons contrasts with blocky cards */
+    font-weight: 700 !important;
+    font-size: 0.95rem !important;
+    padding: 0.75rem 1.5rem !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    letter-spacing: -0.01em;
+    text-transform: uppercase !important;
+    /* Bold authority */
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+    /* Brutalist/Pop shadow */
+    border: 2px solid #000000 !important;
+}
+
+button.try {
+    background-color: var(--primary) !important;
+    color: var(--primary-foreground) !important;
+}
+
+button.try:hover {
+    background-color: var(--accent) !important;
+    /* Switch to Cyan on hover */
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+}
+
+button.buy {
+    background-color: var(--white) !important;
+    color: var(--secondary) !important;
+}
+
+button.buy:hover {
+    background-color: var(--muted) !important;
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+}
+
+button.big {
+    padding: 1rem 2rem !important;
+    font-size: 1.125rem !important;
+}
+
+/* Cards (Bento Style) */
+.box,
+.systems_item,
+.tilt-box-img-text {
+    background-color: var(--card) !important;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: var(--radius);
+    /* Large rounded corners */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    /* Ensure content clips to the large radius */
+}
+
+.box:hover,
+.systems_item:hover,
+.tilt-box-img-text:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transform: scale(1.02);
+    /* Slight zoom for that "app" feel */
+    border-color: var(--primary);
+}
+
+/* Typography Improvements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Inter', sans-serif !important;
+    letter-spacing: -0.025em;
+    color: var(--foreground);
+    /* Black Headings for readability */
+}
+
+p {
+    line-height: 1.75;
+    color: var(--text-color);
+}
+
+/* Hero Section Refinement */
+.title_banner h1 {
+    font-weight: 800;
+    color: var(--white);
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.title_banner_content {
+    background: rgba(0, 0, 0, 0.6) !important;
+    /* Darker for better neon contrast */
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-radius: var(--radius);
+    /* Rounded corners for the glass card too */
+}
+
+/* Navbar Links */
+nav ul li a {
+    font-weight: 500 !important;
+    color: var(--muted-foreground) !important;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color) !important;
+    /* Neon on hover */
+}
+
+/* Fix for Contrast Sections */
+.contrast-section {
+    background-color: var(--secondary) !important;
+    /* Black Background */
+    color: var(--white) !important;
+    /* White Text */
+}
+
+.contrast-section h1,
+.contrast-section h2,
+.contrast-section h3 {
+    color: var(--primary) !important;
+    /* Neon Headings on Black */
+}
+
+.contrast-section p {
+    color: #a1a1aa !important;
+    /* Light Grey text */
+}
+
+/* Footer Modernization */
+footer {
+    background-color: var(--dark-bg) !important;
+    border-top: 1px solid var(--border);
+}
+
+/* Utility Classes */
+.rounded-full {
+    border-radius: 9999px !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+}

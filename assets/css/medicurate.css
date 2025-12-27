@@ -206,3 +206,58 @@ footer {
     display: none !important;
   }
 }
+
+/* Device Comparison Header Styles */
+.device-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.device-image {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.device-image:hover {
+  transform: scale(1.05);
+}
+
+.device-name {
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 5px;
+  color: var(--text-color);
+}
+
+/* Responsive adjustments for Device Comparison */
+@media (max-width: 992px) {
+  .device-image {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .device-image {
+    width: 80px;
+  }
+
+  .device-name {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .device-image {
+    width: 60px;
+  }
+
+  .device-name {
+    font-size: 10px;
+  }
+}

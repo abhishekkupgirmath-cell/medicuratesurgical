@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Joe Burrow’s Turf Toe Injury - Medicurate Surgical</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/guillaume.css">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="layout-anchor anchor-tl" style="padding: 30px;">
+        <img src="img/medicurate.png" alt="Medicurate Logo" style="width: 180px; height: auto;">
+    </div>
+
+    <div class="layout-anchor anchor-tr">
+        <div class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="institution.html" class="nav-link">Institution</a>
+            <a href="professional.html" class="nav-link">Professional</a>
+            <a href="personal.html" class="nav-link">Personal</a>
+            <a href="contact-form.html" class="nav-link">Contact</a>
+        </div>
+    </div>
+
+    <div class="layout-anchor anchor-bl">
+        <div class="mono-label">Socials</div>
+        <div class="nav-menu" style="flex-direction: row; gap: 20px;">
+            <a href="https://www.linkedin.com/company/medicurate-surgical/" target="_blank" class="nav-link">LI</a>
+            <a href="https://instagram.com" target="_blank" class="nav-link">IG</a>
+            <a href="https://youtube.com" target="_blank" class="nav-link">YT</a>
+        </div>
+    </div>
+
+    <div class="layout-anchor anchor-br">
+        <div class="mono-label">Status</div>
+        <div style="display: flex; align-items: center; gap: 10px; font-family: var(--font-mono); font-size: 0.8rem;">
+            <span
+                style="width: 8px; height: 8px; background: #32ff64; border-radius: 50%; display: inline-block;"></span>
+            Online
+        </div>
+    </div>
+
+    <main style="max-width: 800px; margin: 15vh auto; padding: 0 2rem;">
+        <div class="mono-label" style="margin-bottom: 2rem;"><a href="news.html" class="nav-link"><- Back to News</a>
+        </div>
+
+        <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 2rem;">Joe Burrow’s <span class="glow-text">Turf
+                Toe Injury</span> Explained on ESPN</h1>
+
+        <div style="font-family: var(--font-mono); opacity: 0.6; margin-bottom: 3rem;">
+            Sep 18, 2025 • Sports Medicine
+        </div>
+
+        <img src="img/content-body-body-action.png"
+            style="width: 100%; border-radius: 20px; margin-bottom: 3rem; opacity: 0.8;" alt="Turf Toe Visualization">
+
+        <div style="line-height: 1.8; font-size: 1.1rem; opacity: 0.9;">
+            <p style="margin-bottom: 2rem;">When Cincinnati Bengals quarterback Joe Burrow suffered a "turf toe" injury,
+                ESPN turned to <strong>Human Anatomy VR</strong> to explain the severity of the condition to fans
+                worldwide. The segment showcased the incredible detail of the metatarsophalangeal (MTP) joint.</p>
+
+            <p style="margin-bottom: 2rem;">By isolating the ligaments and tendons of the great toe, the broadcast
+                demonstrated how a hyperextension injury affects an athlete's ability to "push off" and accelerate. The
+                immersive 3D models provided a clarity that traditional 2D diagrams simply cannot match.</p>
+
+            <p style="margin-bottom: 2rem;">The segment was praised for its educational value, bridging the gap between
+                professional sports and advanced medical visualization. It highlighted how Medicurate Surgical's tools
+                are being used beyond the classroom and clinic, reaching millions in the mainstream media.</p>
+
+            <p>This appearance marks another milestone in the integration of VR technology into daily information
+                consumption and high-stakes reporting.</p>
+        </div>
+    </main>
+
+    <script>
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
+        window.addEventListener('mousemove', (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+            cursorOutline.animate({ left: `${posX}px`, top: `${posY}px` }, { duration: 500, fill: "forwards" });
+        });
+    </script>
+</body>
+
+</html>

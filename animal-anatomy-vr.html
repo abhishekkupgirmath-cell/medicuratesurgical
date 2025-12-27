@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Medicurate Surgical Releases Animal Anatomy VR - News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/guillaume.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Layout Anchors -->
+    <div class="layout-anchor anchor-tl" style="padding: 30px;">
+        <img src="img/medicurate.png" alt="Medicurate Logo" style="width: 180px; height: auto;">
+    </div>
+
+    <div class="layout-anchor anchor-tr">
+        <div class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="institution.html" class="nav-link">Institution</a>
+            <a href="professional.html" class="nav-link">Professional</a>
+            <a href="personal.html" class="nav-link">Personal</a>
+            <a href="contact-form.html" class="nav-link">Contact</a>
+        </div>
+    </div>
+
+    <div class="layout-anchor anchor-bl">
+        <div class="mono-label">Socials</div>
+        <div class="nav-menu" style="flex-direction: row; gap: 20px;">
+            <a href="https://www.linkedin.com/company/medicurate-surgical/" target="_blank" class="nav-link">LI</a>
+            <a href="https://instagram.com" target="_blank" class="nav-link">IG</a>
+            <a href="https://youtube.com" target="_blank" class="nav-link">YT</a>
+        </div>
+    </div>
+
+    <div class="layout-anchor anchor-br">
+        <div class="mono-label">Status</div>
+        <div style="display: flex; align-items: center; gap: 10px; font-family: var(--font-mono); font-size: 0.8rem;">
+            <span
+                style="width: 8px; height: 8px; background: #32ff64; border-radius: 50%; display: inline-block;"></span>
+            Online
+        </div>
+    </div>
+
+    <main style="max-width: 800px; margin: 15vh auto; padding: 0 2rem;">
+        <div class="mono-label" style="margin-bottom: 2rem;"><a href="index.html" class="nav-link"><- Back to Home</a>
+        </div>
+
+        <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 2rem;">Medicurate Surgical Releases New Title:
+            <span class="glow-text">Animal Anatomy VR</span>
+        </h1>
+
+        <div style="font-family: var(--font-mono); opacity: 0.6; margin-bottom: 3rem;">
+            Nov 11, 2025 • Product Launch
+        </div>
+
+        <img src="img/human-vr.png" style="width: 100%; border-radius: 20px; margin-bottom: 3rem; opacity: 0.8;"
+            alt="Animal Anatomy VR">
+
+        <div style="line-height: 1.8; font-size: 1.1rem; opacity: 0.9;">
+            <p style="margin-bottom: 2rem;">Medicurate Surgical is proud to announce the latest addition to our virtual
+                reality suite: <strong>Animal Anatomy VR</strong>. Designed for veterinary students, professionals, and
+                enthusiasts, this new title brings the same level of detail/immersion found in our Human Anatomy VR
+                platform to the animal kingdom.</p>
+
+            <p style="margin-bottom: 2rem;">The initial release includes detailed anatomical models for:</p>
+            <ul style="list-style: disc; margin-left: 2rem; margin-bottom: 2rem;">
+                <li>Canine (Dog)</li>
+                <li>Feline (Cat)</li>
+                <li>Equine (Horse)</li>
+                <li>Bovine (Cow)</li>
+            </ul>
+
+            <p style="margin-bottom: 2rem;">"We realized that the veterinary field was underserved in terms of
+                high-quality XR training tools," said the CEO of Medicurate Surgical. "Animal Anatomy VR aims to bridge
+                that gap with photorealistic models and interactive systems."</p>
+
+            <p>The application is now available for Institutions and will be coming to the Personal store next month.
+            </p>
+        </div>
+
+    </main>
+
+    <script>
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
+        window.addEventListener('mousemove', (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+            cursorOutline.animate({ left: `${posX}px`, top: `${posY}px` }, { duration: 500, fill: "forwards" });
+        });
+    </script>
+</body>
+
+</html>
