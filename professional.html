@@ -1,1059 +1,241 @@
 <!doctype html>
-<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>Professional XR Anatomy for Surgeons & Doctors | Medicurate Surgical</title>
-  <meta name="description"
-    content="Enhance patient consultation and surgical planning with Medicurate Surgical's XR tools. Real-time DICOM reconstruction and interactive 3D anatomy.">
+  <title>Professional - Medicurate Surgical</title>
+  <meta name="description" content="Advanced VR Anatomy tools for Surgeons, Doctors, and Healthcare Professionals.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/guillaume.css">
+  <style>
+    .hero-section {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
-  <meta property="og:title" content="Medicurate Surgical – The Future of Healthcare Education">
-  <meta property="og:description"
-    content="Leading innovation in healthcare education through VR/AR technology – Explore interactive human anatomy, DICOM visualization, and realistic medical simulations for professionals and students.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://medicuratesurgical.com">
-  <meta property="og:image" content="https://medicuratesurgical.com/img/SEO-min.png">
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 2rem;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      opacity: 0.8;
+      max-width: 600px;
+    }
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Medicurate Surgical – The Future of Healthcare Education">
-  <meta name="twitter:description"
-    content="Leading innovation in healthcare education through VR/AR technology – Explore interactive human anatomy, DICOM visualization, and realistic medical simulations for professionals and students.">
-  <meta name="twitter:image" content="https://medicuratesurgical.com/img/SEO-min.png">
-  <meta name="twitter:url" content="https://medicuratesurgical.com">
+    .hero-tag {
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+    }
 
-  <link rel="apple-touch-icon" href="icon.png">
+    .content-block {
+      margin-bottom: 8vh;
+    }
 
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet"> -->
+    .content-block h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap"
-    onload="this.onload=null;this.rel='stylesheet'">
-
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap">
-  </noscript>
-
-  <!-- <link rel="stylesheet" href="/assets/css/normalize.css"> -->
-  <link rel="stylesheet" href="/assets/css/main.min.css?v=2.5">
-  <link rel="stylesheet" href="/assets/css/medicurate.css">
-
-  <meta name="theme-color" content="#FFFFFF">
+    .content-block p {
+      font-size: 1.1rem;
+      opacity: 0.8;
+      max-width: 800px;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 
-<body style="padding-top: 0;">
+<body>
 
-  <div class="bg_blur">
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Layout Anchors -->
+  <div class="layout-anchor anchor-tl" style="padding: 30px;">
+    <img src="img/medicurate.png" alt="Medicurate Logo" style="width: 180px; height: auto;">
   </div>
 
-  <header>
-    <div class="burger_menu_bg">
-      <ul>
-
-        <li class="mobile-dropdown">
-          <span class="mobile-dropbtn" onclick="toggleMenu('products-submenu')">Products <span
-              class="arrow arrow-down"></span></span>
-          <ul class="mobile-dropdown-bg" id="products-submenu">
-            <div class="mobile-dropdown-content">
-              <div class="mobile-dropdown-content-bg">
-                <li class=""><a href="institution.html">Institution</a></li>
-                <li class=""><a href="professional.html">Professional</a></li>
-                <li class=""><a href="personal.html">Personal</a></li>
-              </div>
-            </div>
-          </ul>
-        </li>
-
-        <li class=""><a href="news.html">News</a></li>
-        <li class=""><a href="contact.html">About Us</a></li>
-
-      </ul>
-      <!-- <div class="multilanguage-burger">
-        <img src="/img/svk-flag.png" onclick="changeLanguage('sk');">
-        <img src="/img/uk-flag.png" style="opacity: 1; cursor: default">
-      </div> -->
-      <button class="try" onclick="location.href='contact-form.html';" style="border-radius: 20px;">CONTACT US</button>
-      <div class="burger_social_bar">
-        <img src="/img/social-facebook.svg" alt="FACEBOOK" class="social_ico"
-          onclick="window.open('https://www.facebook.com/MedicurateSurgical/')" />
-        <img src="/img/social-instagram.svg" alt="INSTAGRAM" class="social_ico"
-          onclick="window.open('https://www.instagram.com/medicuratesurgical/?hl=en')" />
-        <img src="/img/social-linkedin.svg" alt="LINKEDIN" class="social_ico"
-          onclick="window.open('https://www.linkedin.com/company/medicuratesurgical-vr-ar')" />
-        <img src="/img/social-youtube.svg" alt="YOUTUBE" class="social_ico"
-          onclick="window.open('https://www.youtube.com/channel/UChvqcOhNLxxWBc0FACQeXHg')" />
-      </div>
+  <div class="layout-anchor anchor-tr">
+    <div class="nav-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="institution.html" class="nav-link">Institution</a>
+      <a href="professional.html" class="nav-link" style="color: var(--accent-active);">Professional</a>
+      <a href="personal.html" class="nav-link">Personal</a>
+      <a href="contact-form.html" class="nav-link">Contact</a>
     </div>
-    <div class="nav_container nav_burger_container">
-      <nav>
-        <span class="nav_logo" onclick="location.href='/index.html';">
-          <img src="/img/medicurate.png" alt="Medicurate Surgical" style="padding-left: 10px;" />
-        </span>
-        <!-- burger navbar -->
-        <div class="burger_navbar_container">
-          <div class="burger_navbar_item"></div>
-        </div>
+  </div>
 
-        <!-- burger navbar end -->
-        <ul>
-          <li class="nav_item dropdown">
-            <span class="dropbtn" onclick="location.href='institution.html';">Products <span
-                class="arrow-menu"></span></span>
-            <ul class="dropdown-bg">
-              <div class="dropdown-content">
-                <div class="dropdown-content-bg">
-                  <li class="nav_item_dropdown"><a href="/institution.html">Institution</a></li>
-                  <li class="nav_item_dropdown"><a href="/professional.html">Professional</a></li>
-                  <li class="nav_item_dropdown"><a href="/personal.html">Personal</a></li>
-                </div>
-              </div>
-            </ul>
-          </li>
-
-          <li class="nav_item"><a href="/news.html">News</a></li>
-
-          <li class="nav_item"><a href="/contact.html">About Us</a></li>
-        </ul>
-        <button class="nav_item_button try" onclick="location.href='contact-form.html';">CONTACT US</button>
-        <!-- <div class="multilanguage responsive_hidden">
-          <img src="/img/svk-flag.png" onclick="location.href='sk/index.html';">
-          <img src="/img/uk-flag.png" style="opacity: 1; cursor: default">
-        </div> -->
-      </nav>
+  <div class="layout-anchor anchor-bl">
+    <div class="mono-label">Socials</div>
+    <div class="nav-menu" style="flex-direction: row; gap: 20px;">
+      <a href="https://www.linkedin.com/company/medicurate-surgical/" target="_blank" class="nav-link">LI</a>
+      <a href="https://instagram.com" target="_blank" class="nav-link">IG</a>
+      <a href="https://youtube.com" target="_blank" class="nav-link">YT</a>
     </div>
-  </header>
-  <section class="vm_products vm_products_features vm_products_first">
-    <h2>Medicurate Surgical for Professionals</h2>
-    <div class="vm_products_item_group" style="gap: 60px;">
-      <div class="vm_products_item">
-        <img src="img/features-body.svg" onclick="scrollingFunction('more-professional-info')">
-        <h5>With more than 13 000<br>Anatomical structures</h5>
-      </div>
-      <div class="vm_products_item">
-        <img src="img/features-dicom.svg" onclick="scrollingFunction('item-professional-dicom')">
-        <h5>DICOM viewer</h5>
-        <p style="font-size: 10px; margin-top: -10px;">Only Extended License<br>(Please contact us)</p>
-      </div>
-      <div class="vm_products_item">
-        <img src="img/features-body-action.svg" onclick="scrollingFunction('item-professional-actions')">
-        <h5>Body actions</h5>
-      </div>
-      <div class="vm_products_item">
-        <img src="img/features-multi-user.svg" onclick="scrollingFunction('item-professional-collaboration')">
-        <h5>Multi-user<br>collaboration</h5>
-        <p style="font-size: 10px; margin-top: -10px;">Only Extended License<br>(Please contact us)</p>
-      </div>
-      <div class="vm_products_item">
-        <img src="img/features-hands.svg" onclick="scrollingFunction('more-professional-info')">
-        <h5>Hand tracking</h5>
-      </div>
+  </div>
+
+  <div class="layout-anchor anchor-br">
+    <div class="mono-label">Status</div>
+    <div style="display: flex; align-items: center; gap: 10px; font-family: var(--font-mono); font-size: 0.8rem;">
+      <span style="width: 8px; height: 8px; background: #32ff64; border-radius: 50%; display: inline-block;"></span>
+      Online
     </div>
-  </section>
+  </div>
 
-  <section class="features old-features">
-    <div class="features_img">
-      <img src="img/doctor-header-min.png" />
-    </div>
-    <h2>Be thoughtful of your patients</h2>
-    <h4></h4>
-    <p>
-      Over 13,000 precisely modelled structures offer a fully-fledged environment for professional purposes.
-      Supplemented by animations of muscles your patients will immediately understand how medical procedures will be
-      performed.<br><br>
-      The combination of complete anatomical atlas and 3D DICOM viewer makes this product world unique. Virtual reality
-      is a game changing tool for viewing DICOM data. Professionals across the world can analyse CT and MRI scans
-      together in virtual reality – as easily as if side-by-side in the operating room.<br><br>
-    </p>
-  </section>
+  <main>
+    <!-- Hero -->
+    <section class="hero-section">
+      <div class="mono-label">For Professionals</div>
+      <h1 class="hero-title" style="font-size: clamp(3rem, 6vw, 7rem);">Medicurate Surgical<br><span
+          class="glow-text">for
+          Professionals</span></h1>
 
-  <section class="quotes">
-    <blockquote>
-      <q>VR’s added value for displaying CT and MRI data is almost unquantifiable. 3D imaging gives the impression that
-        the patient is in the VR with you, the only difference is that you can also examine the patient in detail from
-        the inside.</q>
-      <cite>Prof. Ján Breza, MD, PhD., MPH<br>Head of Department of Pediatric Urology at University Hospital
-        Bratislava</cite>
-    </blockquote>
-  </section>
+      <div class="hero-tags">
+        <span class="hero-tag">13,000+ Anatomical structures</span>
+        <span class="hero-tag">DICOM Viewer (Extended)</span>
+        <span class="hero-tag">Body Actions</span>
+        <span class="hero-tag">Multi-User (Extended)</span>
+        <span class="hero-tag">Hand Tracking</span>
+      </div>
+      <br>
+      <a href="contact-form.html" class="nav-link" style="font-size: 1.2rem; margin-top: 2rem;">CONTACT FOR LICENSE
+        -></a>
 
+      <div style="margin-top: 3rem;">
+        <img src="img/meta33.png" alt="Meta 3" style="width: 200px; height: auto; opacity: 0.9;">
+      </div>
+    </section>
 
-  <section class="systems" id="systems">
-    <h4 class="margin-bottom10">Over 13,000 anatomical structures with detailed descriptions</h4>
-    <div class="systems_item_group container systems_item_desktop" style="padding: 0; max-width: 1100px;">
-      <div class="systems_item">
-        <img src="img/systems-skeleton-icon.png" alt="SKELETON" />
-        <p>SKELETON<br />SYSTEM</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/systems-connective-tissues-icon.png" alt="CONNECTIVE TISSUES" />
-        <p>CONNECTIVE<br />TISSUES</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/systems-muscles-icon.png" alt="MUSCULAR SYSTEM" />
-        <p>MUSCULAR<br />SYSTEM</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/systems-integumentary-icon.png" alt="INTEGUMENTARY SYSTEM" />
-        <p>INTEGUMENTARY<br />SYSTEM</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/systems-brain-icon.png" alt="BRAIN SYSTEM" />
-        <p>BRAIN<br />SYSTEM</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/systems-respiratory-icon.png" alt="RESPIRATORY SYSTEM" />
-        <p>RESPIRATORY<br />SYSTEM</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/systems-digestive-icon.png" alt="DIGESTIVE SYSTEM" />
-        <p>DIGESTIVE<br />SYSTEM</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/systems-urogenital-icon.png" alt="UROGENITAL SYSTEM" />
-        <p>UROGENITAL<br />SYSTEM</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/systems-arteries-icon.png" alt="ARTERIES SYSTEM" />
-        <p>ARTERIES<br />SYSTEM</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/systems-veins-icon.png" alt="VEINS SYSTEM" />
-        <p>VEINS<br />SYSTEM</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/systems-nervous-icon.png" alt="NERVOUS SYSTEM" />
-        <p>NERVOUS<br />SYSTEM</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/systems-lymphatic-icon.png" alt="LYMPHATIC SYSTEM" />
-        <p>LYMPHATIC<br />SYSTEM</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/senzo-icon.png" alt="SKELETON SYSTEM" />
-        <p>SENSORIC<br />SYSTEM</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/endo-icon.png" alt="ENDOCRINE  SYSTEM" />
-        <p>ENDOCRINE<br />SYSTEM</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/urogenital.png" alt="REPRODUCTIVE SYSTEM" />
-        <p>REPRODUCTIVE<br />SYSTEM</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/supra.png" alt="SUPRARENAL GLAND" />
-        <p>SUPRARENAL<br />GLAND</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/tongue-icon.png" alt="TONGUE" />
-        <p>TONGUE</p>
+    <!-- Patients & Overview -->
+    <section class="content-block">
+      <div class="mono-label">Patient Care</div>
+      <h3>Be thoughtful of your patients</h3>
+      <p>Over 13,000 precisely modelled structures offer a fully-fledged environment for professional purposes.
+        Supplemented by animations of muscles your patients will immediately understand how medical procedures
+        will be performed.</p>
+    </section>
+
+    <section class="content-block">
+      <div class="mono-label">Analysis</div>
+      <h3>Unique Visualization</h3>
+      <p>The combination of complete anatomical atlas and 3D DICOM viewer makes this product world unique. Virtual
+        reality is a game changing tool for viewing DICOM data. Professionals across the world can analyse CT
+        and MRI scans together in virtual reality – as easily as if side-by-side in the operating room.</p>
+    </section>
+
+    <!-- Features List -->
+    <section>
+      <div class="mono-label" style="margin-bottom: 2rem;">Professional Tools</div>
+
+      <!-- Feature 1 -->
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-number">01</span>
+          <h2 class="project-title">Anatomy Atlas</h2>
+        </div>
+        <div style="margin-top: 2rem; max-width: 600px; opacity: 0.8; font-family: var(--font-mono);">
+          More than 13,000 Anatomical structures available for detailed study and patient demonstration.
+        </div>
+        <img src="img/anatomy-ar-img.png" class="hover-reveal-img" alt="Atlas">
       </div>
 
-      <div class="systems_item">
-        <img src="img/eye-icon.png" alt="EYE" />
-        <p>EYE</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/ear-icon.png" alt="EAR" />
-        <p>EAR</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/skin-icon.png" alt="SKIN DETAIL" />
-        <p>SKIN<br />DETAIL</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/tooth.png" alt="TOOTH" />
-        <p>TOOTH</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/blood-icon.png" alt="BLOOD VESSEL" />
-        <p>BLOOD<br />VESSEL</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/bone-icon.png" alt="BONE" />
-        <p>BONE</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/lymphatic-node-icon.png" alt="LYMPHATIC NODE" />
-        <p>LYMPHATIC<br />NODE</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/peripetal-icon.png" alt="PERIPETAL NERVE" />
-        <p>PERIPETAL<br />NERVE</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/blood-second-icon.png" alt="BLOOD" />
-        <p>BLOOD</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/bronchial-tree-icon.png" alt="BRONCHIAL TREE" />
-        <p>BRONCHIAL<br />TREE</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/olfactory-icon.png" alt="OLFACTORY ORGAN" />
-        <p>OLFACTORY<br />ORGAN</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/oocyte-icon.png" alt="SECONDARY OOCYTE" />
-        <p>SECONDARY<br />OOCYTE</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/tendon-icon.png" alt="TENDON" />
-        <p>TENDON</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/sperm-icon.png" alt="SPERM" />
-        <p>SPERM</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/muscle-icon.png" alt="MUSCLE" />
-        <p>MUSCLE</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/kidney-icon.png" alt="LOBE OF KIDNEY" />
-        <p>LOBE OF<br />KIDNEY</p>
-      </div>
-      <div class="systems_item">
-        <img src="img/muscular.png" alt="MUSCULAR FIBER" />
-        <p>MUSCULAR<br />FIBER</p>
-      </div>
-    </div>
-
-
-    <div class="systems_item_group container systems_item_mobile" style="padding: 0; max-width: 1150px;">
-      <div class="systems_item_row">
-        <div class="systems_item">
-          <img src="img/systems-skeleton-icon.png" alt="SKELETON" />
-          <p>SKELETON<br />SYSTEM</p>
+      <!-- Feature 2 -->
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-number">02</span>
+          <h2 class="project-title">DICOM Viewer</h2>
+          <span class="project-meta">EXTENDED LICENSE</span>
         </div>
-        <div class="systems_item">
-          <img src="img/systems-connective-tissues-icon.png" alt="CONNECTIVE TISSUES" />
-          <p>CONNECTIVE<br />TISSUES</p>
+        <div style="margin-top: 2rem; max-width: 600px; opacity: 0.8; font-family: var(--font-mono);">
+          Professional grade DICOM viewer for clinical analysis. (Please contact us for Extended License).
         </div>
-        <div class="systems_item">
-          <img src="img/systems-muscles-icon.png" alt="MUSCULAR" />
-          <p>MUSCULAR<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-integumentary-icon.png" alt="INTEGUMENTARY" />
-          <p>INTEGUMENTARY<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-brain-icon.png" alt="BRAIN" />
-          <p>BRAIN<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-respiratory-icon.png" alt="RESPIRATORY" />
-          <p>RESPIRATORY<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-digestive-icon.png" alt="DIGESTIVE" />
-          <p>DIGESTIVE<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-urogenital-icon.png" alt="UROGENITAL" />
-          <p>UROGENITAL<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-arteries-icon.png" alt="ARTERIES" />
-          <p>ARTERIES<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-veins-icon.png" alt="VEINS" />
-          <p>VEINS<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-nervous-icon.png" alt="NERVOUS" />
-          <p>NERVOUS<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-lymphatic-icon.png" alt="LYMPHATIC" />
-          <p>LYMPHATIC<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/senzo-icon.png" alt="SKELETON" />
-          <p>SENSORIC<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/endo-icon.png" alt="CONNECTIVE TISSUES" />
-          <p>ENDOCRINE<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/urogenital.png" alt="REPRODUCTIVE SYSTEM" />
-          <p>REPRODUCTIVE<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/supra.png" alt="MUSCULAR" />
-          <p>SUPRARENAL<br />GLAND</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/tongue-icon.png" alt="INTEGUMENTARY" />
-          <p>TONGUE</p>
-        </div>
-
-        <!-- klonovanie -->
-        <div class="systems_item">
-          <img src="img/systems-skeleton-icon.png" alt="SKELETON" />
-          <p>SKELETON<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-connective-tissues-icon.png" alt="CONNECTIVE TISSUES" />
-          <p>CONNECTIVE<br />TISSUES</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-muscles-icon.png" alt="MUSCULAR" />
-          <p>MUSCULAR<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-integumentary-icon.png" alt="INTEGUMENTARY" />
-          <p>INTEGUMENTARY<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-brain-icon.png" alt="BRAIN" />
-          <p>BRAIN<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-respiratory-icon.png" alt="RESPIRATORY" />
-          <p>RESPIRATORY<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-digestive-icon.png" alt="DIGESTIVE" />
-          <p>DIGESTIVE<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-urogenital-icon.png" alt="UROGENITAL" />
-          <p>UROGENITAL<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-arteries-icon.png" alt="ARTERIES" />
-          <p>ARTERIES<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-veins-icon.png" alt="VEINS" />
-          <p>VEINS<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-nervous-icon.png" alt="NERVOUS" />
-          <p>NERVOUS<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/systems-lymphatic-icon.png" alt="LYMPHATIC" />
-          <p>LYMPHATIC<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/senzo-icon.png" alt="SKELETON" />
-          <p>SENSORIC<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/endo-icon.png" alt="CONNECTIVE TISSUES" />
-          <p>ENDOCRINE<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/urogenital.png" alt="REPRODUCTIVE SYSTEM" />
-          <p>REPRODUCTIVE<br />SYSTEM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/supra.png" alt="MUSCULAR" />
-          <p>SUPRARENAL<br />GLAND</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/tongue-icon.png" alt="INTEGUMENTARY" />
-          <p>TONGUE</p>
-        </div>
+        <img src="img/features-dicom.svg" class="hover-reveal-img" alt="DICOM">
       </div>
 
-      <div class="systems_item_row">
-        <div class="systems_item">
-          <img src="img/eye-icon.png" alt="SKELETON" />
-          <p>EYE</p>
+      <!-- Feature 3 -->
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-number">03</span>
+          <h2 class="project-title">Body Actions</h2>
         </div>
-        <div class="systems_item">
-          <img src="img/ear-icon.png" alt="EAR" />
-          <p>EAR</p>
+        <div style="margin-top: 2rem; max-width: 600px; opacity: 0.8; font-family: var(--font-mono);">
+          Visualize muscle movements and biomechanics to explain conditions clearly to patients.
         </div>
-        <div class="systems_item">
-          <img src="img/skin-icon.png" alt="MUSCULAR" />
-          <p>SKIN<br />DETAIL</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/tooth.png" alt="INTEGUMENTARY" />
-          <p>TOOTH</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/blood-icon.png" alt="BLOOD VESSEL" />
-          <p>BLOOD<br />VESSEL</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/bone-icon.png" alt="BONE" />
-          <p>BONE</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/lymphatic-node-icon.png" alt="DIGESTIVE" />
-          <p>LYMPHATIC<br />NODE</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/peripetal-icon.png" alt="UROGENITAL" />
-          <p>PERIPETAL<br />NERVE</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/blood-second-icon.png" alt="ARTERIES" />
-          <p>BLOOD</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/bronchial-tree-icon.png" alt="VEINS" />
-          <p>BRONCHIAL<br />TREE</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/olfactory-icon.png" alt="NERVOUS" />
-          <p>OLFACTORY<br />ORGAN</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/oocyte-icon.png" alt="LYMPHATIC" />
-          <p>SECONDARY<br />OOCYTE</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/tendon-icon.png" alt="SKELETON" />
-          <p>TENDON</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/sperm-icon.png" alt="CONNECTIVE TISSUES" />
-          <p>SPERM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/muscle-icon.png" alt="MUSCULAR" />
-          <p>MUSCLE</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/kidney-icon.png" alt="INTEGUMENTARY" />
-          <p>LOBE OF<br />KIDNEY</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/muscular.png" alt="BRAIN" />
-          <p>MUSCULAR<br />FIBER</p>
-        </div>
-
-        <!-- klonovanie -->
-        <div class="systems_item">
-          <img src="img/eye-icon.png" alt="SKELETON" />
-          <p>EYE</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/ear-icon.png" alt="EAR" />
-          <p>EAR</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/skin-icon.png" alt="MUSCULAR" />
-          <p>SKIN<br />DETAIL</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/tooth.png" alt="INTEGUMENTARY" />
-          <p>TOOTH</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/blood-icon.png" alt="BLOOD VESSEL" />
-          <p>BLOOD<br />VESSEL</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/bone-icon.png" alt="BONE" />
-          <p>BONE</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/lymphatic-node-icon.png" alt="DIGESTIVE" />
-          <p>LYMPHATIC<br />NODE</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/peripetal-icon.png" alt="UROGENITAL" />
-          <p>PERIPETAL<br />NERVE</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/blood-second-icon.png" alt="ARTERIES" />
-          <p>BLOOD</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/bronchial-tree-icon.png" alt="VEINS" />
-          <p>BRONCHIAL<br />TREE</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/olfactory-icon.png" alt="NERVOUS" />
-          <p>OLFACTORY<br />ORGAN</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/oocyte-icon.png" alt="LYMPHATIC" />
-          <p>SECONDARY<br />OOCYTE</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/tendon-icon.png" alt="SKELETON" />
-          <p>TENDON</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/sperm-icon.png" alt="CONNECTIVE TISSUES" />
-          <p>SPERM</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/muscle-icon.png" alt="MUSCULAR" />
-          <p>MUSCLE</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/kidney-icon.png" alt="INTEGUMENTARY" />
-          <p>LOBE OF<br />KIDNEY</p>
-        </div>
-        <div class="systems_item">
-          <img src="img/muscular.png" alt="BRAIN" />
-          <p>MUSCULAR<br />FIBER</p>
-        </div>
+        <img src="img/content-body-body-action.png" class="hover-reveal-img" alt="Body Actions">
       </div>
 
-    </div>
-  </section>
-  <section class="content_body content_body-mobile-reverse" style="margin-bottom: 160px">
-    <div class="content_body_title" id="more-professional-info">
-      <h2>Human Anatomy VR</h2>
-      <p>
-        Human Anatomy VR delivers the most immersive human anatomical experience available, specially designed for
-        medical and nursing schools, universities, healthcare systems, medical associations, libraries and healthcare
-        practitioners. Participants can share knowledge across their system using Multi-user mode. Feature rich content
-        of our application is delivered in a deeply engaging experience with excellent graphics and innovative
-        presentation.
-      </p>
-    </div>
-
-    <div class="content_body_item" id="item-professional-dicom">
-      <img src="img/content-body-dicom.png" class="content_body_item_img">
-      <div class="content_body_item_text">
-        <h3>DICOM viewer</h3><br>
-        <p>
-          Human Anatomy VR’s innovative algorithms can restore 2D CT and MRI scan series, and create a 3D model that you
-          can see in VR as if the patient were right in front of you. <br><br>
-          The advanced Cutting feature allows you to cut the model in real time in any plane to access all internal
-          structures. Select any tissue type with the Windowing function.
-        </p>
-      </div>
-    </div>
-
-    <div class="content_body_item" style="margin: 100px 0;" id="item-professional-actions">
-      <img src="img/content-body-body-action.png" class="content_body_item_img mobile_size">
-      <div class="content_body_item_text">
-        <h3>Body actions</h3><br>
-        <p>More than 500 motion animations are ready to be studied, from any angle, for visualizations unlike any other
-          format.<br><br>
-          Animations can be viewed in special high detail mode (Ant mode) with other connected users.</p>
-      </div>
-      <img src="img/content-body-body-action.png" class="content_body_item_img normal_size">
-    </div>
-
-    <div class="content_body_item" id="item-professional-collaboration">
-      <img src="img/content-body-multi-user.png" class="content_body_item_img">
-      <div class="content_body_item_text">
-        <h3>Multi-user collaboration</h3><br>
-        <p>Save time and money. Meet, work and study together – even during lockdown. The Multi-user collaboration
-          function allows you to connect up to 100 people in a single room, where you can organize a lecture for your
-          patients, colleagues or students.<br><br>
-          3D Avatars enable you to see and hear every connected user as if you’re together in the room – wherever in the
-          world that user is.</p>
-      </div>
-    </div>
-
-  </section>
-
-
-  <section class="content_body">
-
-    <div class="content_body_title">
-      <h2>AR Anatomy</h2>
-      <p>
-        AR Anatomy represents our comprehensive educational package utilizing mobile, tablet, and desk / laptop devices.
-        It contains all human body systems (skeletal, muscular, nervous, cardiovascular, respiratory, digestive,
-        reproductive, lymphatic, and connective tissues, etc.) with multiple function interaction including combine,
-        layer, and highlight capabilities. With the advanced AR Mode, you can position a human body model in a
-        real-world environment.
-      </p>
-      <img src="img/content-body-platform-title-img.png" class="content_body_item_img content_body_picture_mobile">
-    </div>
-  </section>
-
-  <section class="container margin-bottom40" id="ar">
-    <div class="content_body_item" style="text-align: left">
-      <h2 class="mobile-only">Don’t have a VR headset?<br />Not a problem.</h2>
-      <img src="img/new-iphone.png" class="content_body_item_img content_body_picture_mobile" alt="iphone-vr">
-      <div class="content_body_item_text">
-        <h2 class="desktop-only">Don’t have a VR headset?<br />Not a problem.</h2><br>
-        <p class="margin-bottom40">Our augmented reality mode enables you to place anatomical models directly in your
-          real-world environment. These 3D anatomical models are displayed in their actual size.<br><br>
-          More than 13,000 structures and animations accompanied with detailed descriptions, right in your pocket –
-          anytime and anyplace.
-        </p>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="solution_bar extra-padding-bottom" id="compare-table">
-    <div class="container">
-      <h2 class="margin-bottom20">We have tailored the perfect solution for you</h2>
-      <p class="margin-bottom80">Medicurate Surgical considers everyone’s needs a priority and that's why we have
-        created
-        our products ideal for students, professionals, and institutions.</p>
-      <div class="solution_bar_item_group">
-        <div class="solution_bar_item_holder">
-          <div class="solution_bar_item_absolute tilt">
-            <div>
-              <img src="img/solution-student-img.svg" alt="STUDENT" class="margin-bottom20" alt="STUDENT" />
-              <h4 class="margin-bottom20">Personal</h4>
-              <p>Whether you’re a medical or healthcare student, a science or fitness enthusiast, or simply curious
-                about the human body, Human Anatomy VR is the ultimate tool to advance your knowledge.</p>
-            </div>
-            <button class="buy" onclick="location.href='personal.html';">MORE INFO</button>
-          </div>
+      <!-- Feature 4 -->
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-number">04</span>
+          <h2 class="project-title">Multi-User</h2>
+          <span class="project-meta">EXTENDED LICENSE</span>
         </div>
-        <div class="solution_bar_item_holder">
-          <div class="solution_bar_item_absolute tilt">
-            <div>
-              <img src="img/solution-professional-img.svg" alt="DOCTOR" class="margin-bottom20" alt="DOCTOR" />
-              <h4 class="margin-bottom20">Professional</h4>
-              <p>With 13,000+ anatomical structures, Human Anatomy VR offers an immersive, detailed environment for
-                medical professionals to deepen, apply, and refine their anatomical knowledge.</p>
-            </div>
-            <button class="buy" onclick="location.href='professional.html';">MORE INFO</button>
-          </div>
+        <div style="margin-top: 2rem; max-width: 600px; opacity: 0.8; font-family: var(--font-mono);">
+          Collaborate with colleagues globally in a shared virtual space. (Please contact us for Extended License).
         </div>
-        <div class="solution_bar_item_holder">
-          <div class="solution_bar_item_absolute tilt">
-            <div>
-              <img src="img/solution-institution-img.svg" alt="INSTITUTION" class="margin-bottom20" alt="INSTITUTION" />
-              <h4 class="margin-bottom20">Institutions</h4>
-              <p>Transform your classroom with Human Anatomy VR — our most advanced tool built for institutions. Engage
-                students, enhance teaching, and bring anatomy to life with cutting-edge virtual reality.</p>
-            </div>
-            <button class="buy" onclick="location.href='institution.html';">MORE INFO</button>
-          </div>
-        </div>
+        <img src="img/features-multi-user.svg" class="hover-reveal-img" alt="Collaboration">
       </div>
 
-      <div class="carousel-navigation-solution_bar_item_group">
-        <button class="carousel-bullet carousel-bullet-white is-active"></button>
-        <button class="carousel-bullet carousel-bullet-white"></button>
-        <button class="carousel-bullet carousel-bullet-white"></button>
-      </div>
-    </div>
-  </section>
-
-  <section class="compare-table container margin-bottom40">
-    <div class="margin-bottom40 mobile-compare-table-header-title">
-      <img src="img/anatomy-human-2222-img.png" alt="anatomy-human">
-      <div>
-        <h2>Human Anatomy VR</h2>
-        <span>(for XR Headsets)</span>
-      </div>
-    </div>
-
-
-    <div class="table_container">
-      <div class="compare-table-header">
-        <div class="compare-table-header-title">
-          <img src="img/anatomy-human-2222-img.png" alt="anatomy-human">
-          <div>
-            <div>Human Anatomy VR</div>
-            <span>(for XR Headsets)</span>
-          </div>
+      <!-- Feature 5 -->
+      <div class="project-card">
+        <div class="project-header">
+          <span class="project-number">05</span>
+          <h2 class="project-title">Hand Tracking</h2>
         </div>
-        <div class="compare-table-header-types">
-          <div class="compare-table-header-type">
-            <div class="title">Personal</div>
-            <div class="title">Professional</div>
-            <div class="title">Institution</div>
-          </div>
-          <div class="compare-table-header-type">
-            <ul>
-              <li>For Students and Enthusiasts</li>
-              <li>Personal license for one device</li>
-              <li>One license maximum</li>
-            </ul>
-            <ul>
-              <li>For Patient Education and Information</li>
-              <li>Up to two professional licenses, each for one device</li>
-            </ul>
-            <ul>
-              <li>For Surgical Teaching and Medical Education</li>
-              <li>Institutional license per device</li>
-              <li>Option for Unlimited Licenses</li>
-            </ul>
-          </div>
-
-
-
+        <div style="margin-top: 2rem; max-width: 600px; opacity: 0.8; font-family: var(--font-mono);">
+          Interact with the virtual anatomy naturally using intuitive hand gestures.
         </div>
+        <img src="img/features-hands.svg" class="hover-reveal-img" alt="Hand Tracking">
       </div>
 
-      <div class="compare-table-body">
-        <div class="compare-table-row compare-table-row-special-header">
-          <div class="compare-table-row-title">
-            <div>Name of the App in Store</div>
-          </div>
-          <div class="compare-table-row-values">
-            <div>
-              <img src="img/table-icon-student.png" alt="student-icon">
-              <span>Human Anatomy VR</span>
-            </div>
-            <div>
-              <img src="img/table-icon-institution.png" alt="institution-icon">
-              <span>Human Anatomy VR for Institutions</span>
-            </div>
-            <div>
-              <img src="img/table-icon-institution.png" alt="institution-icon">
-              <span>Human Anatomy VR for Institutions</span>
-            </div>
-          </div>
-        </div>
-        <div class='compare-table-row'>
-          <div class='compare-table-row-title'>
-            <div>Female &amp; Male 3D Anatomy</div>
-            <div class='subtitle'>(with more than 13 000 structures)</div>
-          </div>
-          <div class='compare-table-row-values'>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-          </div>
-        </div>
-        <div class='compare-table-row'>
-          <div class='compare-table-row-title'>
-            <div>Bone mapping and landmarks</div>
-            <div class='subtitle'></div>
-          </div>
-          <div class='compare-table-row-values'>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-          </div>
-        </div>
-        <div class='compare-table-row'>
-          <div class='compare-table-row-title'>
-            <div>Microanatomy</div>
-            <div class='subtitle'></div>
-          </div>
-          <div class='compare-table-row-values'>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-          </div>
-        </div>
-        <div class='compare-table-row'>
-          <div class='compare-table-row-title'>
-            <div>Body actions</div>
-            <div class='subtitle'>More than 500 muscle animations</div>
-          </div>
-          <div class='compare-table-row-values'>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-          </div>
-        </div>
-        <div class='compare-table-row'>
-          <div class='compare-table-row-title'>
-            <div>Multiple Languages</div>
-            <div class='subtitle'></div>
-          </div>
-          <div class='compare-table-row-values'>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-          </div>
-        </div>
-        <div class='compare-table-row'>
-          <div class='compare-table-row-title'>
-            <div>High detail mode (Ant mode)</div>
-            <div class='subtitle'></div>
-          </div>
-          <div class='compare-table-row-values'>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-          </div>
-        </div>
-        <div class='compare-table-row'>
-          <div class='compare-table-row-title'>
-            <div>Dynamic Cross-section</div>
-            <div class='subtitle'></div>
-          </div>
-          <div class='compare-table-row-values'>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-          </div>
-        </div>
-        <div class='compare-table-row'>
-          <div class='compare-table-row-title'>
-            <div>Quizzes</div>
-            <div class='subtitle'></div>
-          </div>
-          <div class='compare-table-row-values'>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-          </div>
-        </div>
-        <div class='compare-table-row'>
-          <div class='compare-table-row-title'>
-            <div>Hand Tracking</div>
-            <div class='subtitle'></div>
-          </div>
-          <div class='compare-table-row-values'>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-          </div>
-        </div>
-        <div class='compare-table-row'>
-          <div class='compare-table-row-title'>
-            <div>Updates</div>
-            <div class='subtitle'></div>
-          </div>
-          <div class='compare-table-row-values'>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-          </div>
-        </div>
-        <div class='compare-table-row'>
-          <div class='compare-table-row-title'>
-            <div>Tests</div>
-            <div class='subtitle'>Create Custom tests</div>
-          </div>
-          <div class='compare-table-row-values'>
-            <div></div>
-            <div></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-          </div>
-        </div>
-        <div class='compare-table-row'>
-          <div class='compare-table-row-title'>
-            <div>Web manager</div>
-            <div class='subtitle'></div>
-          </div>
-          <div class='compare-table-row-values'>
-            <div></div>
-            <div></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-          </div>
-        </div>
-        <div class='compare-table-row'>
-          <div class='compare-table-row-title'>
-            <div>Multi-User collaboration</div>
-            <div class='subtitle'>Join or Create a session with up to 100 participants</div>
-          </div>
-          <div class='compare-table-row-values'>
-            <div></div>
-            <div></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-          </div>
-        </div>
-        <div class='compare-table-row'>
-          <div class='compare-table-row-title'>
-            <div>3D images of cadavers (1500+)</div>
-            <div class='subtitle'>(With detailed descriptions)</div>
-          </div>
-          <div class='compare-table-row-values'>
-            <div></div>
-            <div></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-          </div>
-        </div>
-        <div class='compare-table-row'>
-          <div class='compare-table-row-title'>
-            <div>DICOM viewer for Standalone Headset</div>
-            <div class='subtitle'>(Display and Interact with CT and MRI images)</div>
-          </div>
-          <div class='compare-table-row-values'>
-            <div></div>
-            <div class='table-text'>Contact us</div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-          </div>
-        </div>
-        <div class='compare-table-row'>
-          <div class='compare-table-row-title'>
-            <div>PACS Connectivity</div>
-            <div class='subtitle'>(Connect directly to a PACS server and visualize DICOM data in VR)</div>
-          </div>
-          <div class='compare-table-row-values'>
-            <div></div>
-            <div></div>
-            <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" alt="mark-icon" /></div>
-          </div>
-        </div>
-        <div class='compare-table-row'>
-          <div class='compare-table-row-title'>
-            <div>DICOM viewer for PC</div>
-            <div class='subtitle'>(CT/MRI 3D reconstruction for Desktops)</div>
-          </div>
-          <div class='compare-table-row-values'>
-            <div></div>
-            <div class='table-text'>Contact us</div>
-            <div class='table-text'>Contact us</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- CTA -->
+    <section style="margin-top: 15vh; text-align: left; margin-bottom: 10vh;">
+      <h2 class="section-title">Upgrade your<br>Practice.</h2>
+      <br>
+      <a href="contact-form.html"
+        style="font-size: 1.2rem; text-decoration: underline; text-underline-offset: 8px;">Contact for License</a>
+    </section>
 
-  <section class="scroll_up">
-    <button class="try" onclick="$('html, body').animate({scrollTop : 0}, 1000);">SCROLL UP</button>
-  </section>
+  </main>
 
-  <footer>
-    <div class="footer_menu_container">
-      <div class="def_list_group">
-        <dl>
-          <dt>Products</dt>
-          <dd><a href="personal.html">Personal</a></dd>
-          <dd><a href="professional.html">Professional</a></dd>
-          <dd><a href="institution.html">Institution</a></dd>
-        </dl>
-        <dl>
-          <dt>Company</dt>
-          <dd><a href="contact.html">About us</a></dd>
-          <dd><a href="contact-form.php">Contact us</a></dd>
-        </dl>
-      </div>
-      <div class="footer-information">
-        <strong>*Important Information About Features for Surgical Planning and Clinical Use</strong><br /><br />
-        <span>The VR DICOM's specialized features tailored for surgical planning and pre-operative professional
-          applications are at the moment available for educational purposes only.  For updates on product development,
-          regulatory status, availability, or any questions, please reach out to info@medicuratesurgical.com.</span>
-      </div>
-    </div>
-    <div class="footer_menu_logo">
-      <img src="/img/medicurate.png" onclick="location.href='index.html';" style="cursor: pointer;margin: 15px 0px;"
-        alt="logo-footer">
-      <span style="font-size: 11px; margin: 15px 0px;">Copyright © 2025, Medicurate Surgical | <span
-          onclick="window.open('https://http://www.medicuratesurgical.com')"
-          style="cursor: pointer; color: #8EC1FE;">Terms &
-          Conditions</span> | <span onclick="window.open('https://http://www.medicuratesurgical.com')"
-          style="cursor: pointer; color: #8EC1FE;">Privacy Policy</span>
-    </div>
-  </footer>
+  <script>
+    // Custom Cursor
+    const cursorDot = document.querySelector('.cursor-dot');
+    const cursorOutline = document.querySelector('.cursor-outline');
 
-  <script src="assets/js/cookieconsent-2.8.0/src/cookieconsent.js"></script>
-  <script src="assets/js/cookieconsent-2.8.0/src/cookieconsent-init.js?v=1.1"></script>
+    window.addEventListener('mousemove', (e) => {
+      const posX = e.clientX;
+      const posY = e.clientY;
+      cursorDot.style.left = `${posX}px`;
+      cursorDot.style.top = `${posY}px`;
+      cursorOutline.animate({
+        left: `${posX}px`,
+        top: `${posY}px`
+      }, { duration: 500, fill: "forwards" });
+    });
 
-  <script src="assets/js/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
-  <script src="assets/tilt.js/src/tilt.jquery.js"></script>
-  <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="assets/js/plugins.js"></script>
-  <script src="assets/js/main.min.js?v=1.11"></script>
-
-  <!-- Google tag (gtag.js) -->
-  <script data-cookiecategory="analytics" type="text/plain" async
-    src="https://www.googletagmanager.com/gtag/js?id=G-2BT1WJCQLP"></script>
-  <script data-cookiecategory="analytics"
-    type="text/plain"> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-2BT1WJCQLP'); </script>
-
+    // Hover Reveal
+    document.querySelectorAll('.project-card').forEach(card => {
+      const img = card.querySelector('.hover-reveal-img');
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        img.style.opacity = 1;
+        img.style.transform = `translate(${e.clientX - rect.left}px, ${e.clientY - rect.top}px) translate(-50%, -50%) scale(1) rotate(-5deg)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        img.style.opacity = 0;
+      });
+    });
+  </script>
 </body>
 
 </html>
