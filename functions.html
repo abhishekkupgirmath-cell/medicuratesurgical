@@ -45,13 +45,14 @@
       gap: 2rem;
       margin-bottom: 2rem;
       font-family: var(--font-mono);
-      font-weight: 600;
+      font-weight: 700;
       text-transform: uppercase;
-      font-size: 0.75rem;
-      letter-spacing: 0.05em;
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
       width: 100%;
       max-width: 400px;
       margin-left: auto;
+      color: var(--accent-active);
     }
 
     .compare-table-header-types>div {
@@ -114,11 +115,32 @@
       line-height: 1.4;
     }
 
-    img.compare_mark_icon {
-      width: 22px;
-      height: 22px;
-      filter: grayscale(1) brightness(0.2);
-      opacity: 0.8;
+    .tick-circle {
+      width: 24px;
+      height: 24px;
+      background: #32d4ff;
+      /* Light Blue */
+      border-radius: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 4px 10px rgba(50, 212, 255, 0.3);
+      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .tick-circle::after {
+      content: '';
+      width: 10px;
+      height: 5px;
+      border-left: 2px solid white;
+      border-bottom: 2px solid white;
+      transform: rotate(-45deg) translate(1px, -1px);
+    }
+
+    .compare-table-row:hover .tick-circle {
+      transform: scale(1.2);
     }
 
     .second-compare-table-header {
@@ -214,12 +236,50 @@
 
     @media (max-width: 900px) {
       .compare-table-row-values {
-        min-width: 250px;
-        gap: 1rem;
+        min-width: 300px;
+        gap: 1.5rem;
       }
 
       .table_container {
-        padding: 1.5rem;
+        padding: 2rem 1.5rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .compare-table-row {
+        min-width: 600px;
+      }
+
+      .compare-table-header-types {
+        min-width: 300px;
+      }
+
+      .hero-title {
+        font-size: clamp(2.5rem, 10vw, 4rem) !important;
+      }
+
+      .tab {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .table_container {
+        border-radius: 20px;
+        margin-bottom: 2rem;
+      }
+
+      .second-compare-table-header-text div {
+        font-size: 1.4rem;
+      }
+
+      .tab-container {
+        gap: 1rem;
+        margin-bottom: 3rem;
+      }
+
+      .hero-title {
+        font-size: 3rem !important;
       }
     }
   </style>
@@ -266,7 +326,7 @@
   <main style="padding: 0 5vw;">
     <!-- Hero -->
     <section
-      style="min-height: 50vh; display: flex; flex-direction: column; justify-content: center; margin-bottom: 5vh;">
+      style="min-height: 50vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; margin-bottom: 5vh;">
       <div class="mono-label">Feature Matrix</div>
       <h1 class="hero-title" style="font-size: clamp(3rem, 6vw, 8rem); line-height: 1;">Compare Licenses<br><span
           class="glow-text">&amp; Features</span></h1>
@@ -307,9 +367,15 @@
                   </div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -318,9 +384,15 @@
                   <div class='subtitle'>More than 15 000 anatomical structures</div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -329,9 +401,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -340,9 +418,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -351,9 +435,15 @@
                   <div class='subtitle'>Shows detailed descriptions of every structure</div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -362,9 +452,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -373,9 +469,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -384,9 +486,15 @@
                   <div class='subtitle'>Prepare examples and Load them instantly as you need</div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -395,9 +503,15 @@
                   <div class='subtitle'>Turn on Augmented Reality Mode</div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -406,9 +520,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -417,9 +537,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -428,9 +554,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -439,9 +571,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -450,9 +588,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -461,9 +605,15 @@
                   <div class='subtitle'> </div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -472,9 +622,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -483,9 +639,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -494,9 +656,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -505,9 +673,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -516,9 +690,15 @@
                   <div class='subtitle'> </div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -527,9 +707,15 @@
                   <div class='subtitle'>Choose between 3 different skin types</div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -538,9 +724,15 @@
                   <div class='subtitle'>Choose to examine the Full body or just a Specific Body part</div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -549,9 +741,15 @@
                   <div class='subtitle'>Zoom, Move, Rotate, Scale Model</div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -560,9 +758,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -571,9 +775,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -582,9 +792,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -594,9 +810,15 @@
                     Ukrainian, Slovak, Czech, Portuguese (Brazil) and many more to come!</div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -605,9 +827,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -616,9 +844,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -629,7 +863,9 @@
                 <div class='compare-table-row-values'>
                   <div></div>
                   <div></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -640,7 +876,9 @@
                 <div class='compare-table-row-values'>
                   <div></div>
                   <div></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -651,7 +889,9 @@
                 <div class='compare-table-row-values'>
                   <div></div>
                   <div></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -662,7 +902,9 @@
                 <div class='compare-table-row-values'>
                   <div></div>
                   <div></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -673,7 +915,9 @@
                 <div class='compare-table-row-values'>
                   <div></div>
                   <div></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -684,7 +928,9 @@
                 <div class='compare-table-row-values'>
                   <div></div>
                   <div></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -695,7 +941,9 @@
                 <div class='compare-table-row-values'>
                   <div></div>
                   <div></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -706,7 +954,9 @@
                 <div class='compare-table-row-values'>
                   <div></div>
                   <div></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -717,7 +967,9 @@
                 <div class='compare-table-row-values'>
                   <div></div>
                   <div></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -729,7 +981,9 @@
                   <div></div>
                   <div class='table-text'><a href="contact-form.html"
                       style="color: inherit; text-decoration: underline;">Contact us</a></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -740,7 +994,9 @@
                 <div class='compare-table-row-values'>
                   <div></div>
                   <div></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -788,7 +1044,9 @@
                   <div></div>
                   <div class='table-text'><a href="contact-form.html"
                       style="color: inherit; text-decoration: underline;">Contact us</a></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -800,7 +1058,9 @@
                   <div></div>
                   <div class='table-text'><a href="contact-form.html"
                       style="color: inherit; text-decoration: underline;">Contact us</a></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -812,7 +1072,9 @@
                   <div></div>
                   <div class='table-text'><a href="contact-form.html"
                       style="color: inherit; text-decoration: underline;">Contact us</a></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -824,7 +1086,9 @@
                   <div></div>
                   <div class='table-text'><a href="contact-form.html"
                       style="color: inherit; text-decoration: underline;">Contact us</a></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -836,7 +1100,9 @@
                   <div></div>
                   <div class='table-text'><a href="contact-form.html"
                       style="color: inherit; text-decoration: underline;">Contact us</a></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -848,7 +1114,9 @@
                   <div></div>
                   <div class='table-text'><a href="contact-form.html"
                       style="color: inherit; text-decoration: underline;">Contact us</a></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -860,7 +1128,9 @@
                   <div></div>
                   <div class='table-text'><a href="contact-form.html"
                       style="color: inherit; text-decoration: underline;">Contact us</a></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -872,7 +1142,9 @@
                   <div></div>
                   <div class='table-text'><a href="contact-form.html"
                       style="color: inherit; text-decoration: underline;">Contact us</a></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -884,7 +1156,9 @@
                   <div></div>
                   <div class='table-text'><a href="contact-form.html"
                       style="color: inherit; text-decoration: underline;">Contact us</a></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -896,7 +1170,9 @@
                   <div></div>
                   <div class='table-text'><a href="contact-form.html"
                       style="color: inherit; text-decoration: underline;">Contact us</a></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -928,9 +1204,15 @@
                   <div class='subtitle'>(with more than 13 000 structures)</div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -939,9 +1221,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -950,9 +1238,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -961,9 +1255,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -972,9 +1272,15 @@
                   <div class='subtitle'>More than 500 movement animations</div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -983,9 +1289,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
 
@@ -1017,9 +1329,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -1028,9 +1346,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
@@ -1039,9 +1363,15 @@
                   <div class='subtitle'></div>
                 </div>
                 <div class='compare-table-row-values'>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
-                  <div><img src="img/compare_mark_icon.svg" class="compare_mark_icon" /></div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
+                  <div>
+                    <div class="tick-circle"></div>
+                  </div>
                 </div>
               </div>
               <div class='compare-table-row'>
