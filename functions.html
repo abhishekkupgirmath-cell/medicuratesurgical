@@ -122,25 +122,42 @@
       /* Light Blue */
       border-radius: 50%;
       position: relative;
-      display: flex;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
-      box-shadow: 0 4px 10px rgba(50, 212, 255, 0.3);
-      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 4px 10px rgba(50, 212, 255, 0.2);
     }
 
     .tick-circle::after {
       content: '';
-      width: 10px;
-      height: 5px;
+      width: 8px;
+      height: 4px;
       border-left: 2px solid white;
       border-bottom: 2px solid white;
-      transform: rotate(-45deg) translate(1px, -1px);
+      transform: rotate(-45deg);
+      margin-top: -2px;
+    }
+
+    .compare-table-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--table-border);
+      transition: all 0.3s var(--transition-smooth);
+    }
+
+    .compare-table-row:hover {
+      background: rgba(50, 212, 255, 0.03);
+      padding-left: 1rem;
+      padding-right: 1rem;
+      border-radius: 12px;
     }
 
     .compare-table-row:hover .tick-circle {
-      transform: scale(1.2);
+      transform: scale(1.1);
+      box-shadow: 0 6px 15px rgba(50, 212, 255, 0.3);
     }
 
     .second-compare-table-header {
